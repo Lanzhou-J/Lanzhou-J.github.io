@@ -72,3 +72,7 @@ git push
 
 然后就可以在github-username.github.io看到自己的博客页面了！
 ✿✿ヽ(°▽°)ノ✿
+
+发布博客参考教程：
+- [“Jekyll 博客系列 - 02 配置域名访问”](https://www.youtube.com/watch?v=7lFxEsF5Rw0&list=PLK2w-tGRdrj7vzX7Y-GqKPb2QPrHCYZY1&index=2)
+- [“三分钟在GitHub上搭建个人博客”](https://zhuanlan.zhihu.com/p/28321740)
