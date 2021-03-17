@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "免费搭建一个基于Jekyll的博客站点"
+title:  "Github Pages + Jekyll搭建极简博客"
 tags:
   - 博客
   - jekyll
@@ -36,3 +36,21 @@ curl -L https://get.rvm.io | bash -s stable
 ```
 
 然后就可以继续根据这篇教程[“How to update from ruby 2.3 to 2.6”](https://help.learn.co/en/articles/2789231-how-to-upgrade-from-ruby-2-3-to-2-6)把ruby更新成2.6.1的版本啦。
+
+现在应该可以成功安装Jekyll了，恭喜！✿✿ヽ(°▽°)ノ✿
+（安装RVM的过程卡了我好久……）
+
+### 使用Jekyll
+这一部分也是根据王爵老师的教程。[“Jekyll 博客系列 - 01 快速入门”](https://www.youtube.com/watch?v=Zt_QzSbyDcw&list=PLK2w-tGRdrj7vzX7Y-GqKPb2QPrHCYZY1&index=1)
+在想存放`myblog`的文件夹中
+```
+jekyll new myblog
+cd myblog/
+sudo bundle install
+```
+本地运行博客网站：
+```
+bundle exec jekyll serve
+```
+然后根据log去Server address访问就好：
+```Server address: http://127.0.0.1:4000/```
