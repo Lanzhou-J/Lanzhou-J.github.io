@@ -40,7 +40,7 @@ curl -L https://get.rvm.io | bash -s stable
 现在应该可以成功安装Jekyll了，恭喜！✿✿ヽ(°▽°)ノ✿
 （安装RVM的过程卡了我好久……）
 
-### 使用Jekyll
+### 本地使用Jekyll
 这一部分也是根据王爵老师的教程。[“Jekyll 博客系列 - 01 快速入门”](https://www.youtube.com/watch?v=Zt_QzSbyDcw&list=PLK2w-tGRdrj7vzX7Y-GqKPb2QPrHCYZY1&index=1)
 在想存放`myblog`的文件夹中
 ```
@@ -54,3 +54,21 @@ bundle exec jekyll serve
 ```
 然后根据log去Server address访问就好：
 ```Server address: http://127.0.0.1:4000/```
+
+可以修改`_config.yml`文件和`_posts`里的内容，添加新的博文。
+可以添加一个新的文件夹`_drafts`用于放草稿。
+添加模板等等更多内容可以看教程，网上很多。
+
+### 使用Github Pages来发布博客
+在Github上创建一个新的repo，名字是`XXX.github.io`就可以了，XXX是github用户名。
+然后进入`myblog`文件夹:
+```
+git init
+git add .
+git commit -m "<commit message>"
+git remote add origin git@github.com:<github-username>/<github-username>.github.io.git
+git push
+```
+
+然后就可以在github-username.github.io看到自己的博客页面了！
+✿✿ヽ(°▽°)ノ✿
