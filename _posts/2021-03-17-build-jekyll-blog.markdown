@@ -24,11 +24,15 @@ sudo gem install jekyll bundler
 
 ### 关于Ruby的版本问题：
 如果装过ruby了可以用`ruby -v`来检查ruby的当前版本。
-在install jekyll的时候发现当前ruby是2.3.7但需要ruby更新的版本，所以尝试着根据这篇教程[“How to update from ruby 2.3 to 2.6”](https://help.learn.co/en/articles/2789231-how-to-upgrade-from-ruby-2-3-to-2-6)把ruby更新成了2.6.1的版本。
+在install jekyll的时候发现当前ruby是2.3.7但需要ruby更新的版本。
 
-今天最让我头大的问题是安装rvm(ruby version manager)，根据RVM安装说明（[Installing RVM](https://rvm.io/rvm/install)）首先需要“install GPG keys used to verify installation package”，但使用安装说明给出的代码 `pgp --keyserver hkp://pool.sks-keyservers.net ...`可能会出现这样的error:`gpg: keyserver receive failed: No route to host`
+首先需要安装rvm(ruby version manager)，根据RVM安装说明（[Installing RVM](https://rvm.io/rvm/install)）首先需要“install GPG keys used to verify installation package”，但使用安装说明给出的代码 `pgp --keyserver hkp://pool.sks-keyservers.net ...`可能会出现这样的error:`gpg: keyserver receive failed: No route to host`
 
 解决方法如下：
 ```
 gpg --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+
+curl -L https://get.rvm.io | bash -s stable
 ```
+
+然后就可以继续根据这篇教程[“How to update from ruby 2.3 to 2.6”](https://help.learn.co/en/articles/2789231-how-to-upgrade-from-ruby-2-3-to-2-6)把ruby更新成2.6.1的版本啦。
