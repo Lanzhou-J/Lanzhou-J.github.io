@@ -1,31 +1,34 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "免费搭建一个基于Jekyll的博客站点"
+tags:
+  - 博客
+  - jekyll
+  - 中文
 date:   2021-03-17 23:12:36 +1100
 categories: jekyll update
 ---
 
-(*´▽｀)ノノ你好呀。
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+今天终于建起了一个看起来还挺好用的Tech blog，开心。
+参考的视频是Youtube王爵老师的视频
+[“Jekyll博客系列”](https://www.youtube.com/playlist?list=PLK2w-tGRdrj7vzX7Y-GqKPb2QPrHCYZY1)
 
-Jekyll requires blog post files to be named according to the following format:
+在follow教程安装Jekyll的过程中也遇到了一些问题，比如更新ruby的版本，安装rvm等等，把今天制作Tech blog的开发过程记录一下。
 
-`YEAR-MONTH-DAY-title.MARKUP`
+### 安装Jekyll
+```
+brew install ruby
+sudo gem install jekyll
+sudo gem install jekyll bundler
+```
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+### 关于Ruby的版本问题：
+如果装过ruby了可以用`ruby -v`来检查ruby的当前版本。
+在install jekyll的时候发现当前ruby是2.3.7但需要ruby更新的版本，所以尝试着根据这篇教程[“How to update from ruby 2.3 to 2.6”](https://help.learn.co/en/articles/2789231-how-to-upgrade-from-ruby-2-3-to-2-6)把ruby更新成了2.6.1的版本。
 
-Jekyll also offers powerful support for code snippets:
+今天最让我头大的问题是安装rvm(ruby version manager)，根据RVM安装说明（[Installing RVM](https://rvm.io/rvm/install)）首先需要“install GPG keys used to verify installation package”，但使用安装说明给出的代码 `pgp --keyserver hkp://pool.sks-keyservers.net ...`可能会出现这样的error:`gpg: keyserver receive failed: No route to host`
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+解决方法如下：
+```
+gpg --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+```
