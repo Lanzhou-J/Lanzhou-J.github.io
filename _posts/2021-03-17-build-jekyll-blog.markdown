@@ -6,12 +6,19 @@ tags:
   - jekyll
   - 中文
 date:   2021-03-17 23:12:36 +1100
+description: >
+  Howdy! This is a introduction about how I build my tech blog with Jekyll and Github Pages.
 categories: jekyll update
+hero: https://source.unsplash.com/collection/430471/
+overlay: blue
+published: true
 ---
 
 今天终于建起了一个看起来还挺好用的Tech blog，开心。
 参考的视频是Youtube王爵老师的视频
 [“Jekyll博客系列”](https://www.youtube.com/playlist?list=PLK2w-tGRdrj7vzX7Y-GqKPb2QPrHCYZY1)
+{: .lead}
+<!–-break-–>
 
 在follow教程安装Jekyll的过程中也遇到了一些问题，比如更新ruby的版本，安装rvm等等，把今天制作Tech blog的开发过程记录一下。
 
