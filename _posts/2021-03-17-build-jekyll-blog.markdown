@@ -22,11 +22,11 @@ published: true
 在follow教程安装Jekyll的过程中也遇到了一些问题，比如更新ruby的版本，安装rvm等等，把今天制作Tech blog的开发过程记录一下。
 
 ### 安装Jekyll
-```
+```js
 brew install ruby
 sudo gem install jekyll
 sudo gem install jekyll bundler
-```javascript
+```
 
 ### 关于Ruby的版本问题：
 如果装过ruby了可以用`ruby -v`来检查ruby的当前版本。
