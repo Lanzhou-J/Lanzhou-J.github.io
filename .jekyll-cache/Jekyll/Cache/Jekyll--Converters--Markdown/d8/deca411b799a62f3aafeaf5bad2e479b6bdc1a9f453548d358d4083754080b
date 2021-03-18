@@ -1,0 +1,6 @@
+I"Ä<p class="lead">By default dactl has a couple of special classes which will turn a paragraph into a notice block when added to it. Read on for information on how to use it.</p>
+
+<h2 id="how-to-create-a-notice-block">How to create a notice block</h2>
+<p>Creating notices from your paragraphs works the same way as creating <a href="LINKILYNKI">leading post paragraphs</a>.<br />
+You need to add a correct class <strong>after</strong> the paragraph:</p>
+:ET

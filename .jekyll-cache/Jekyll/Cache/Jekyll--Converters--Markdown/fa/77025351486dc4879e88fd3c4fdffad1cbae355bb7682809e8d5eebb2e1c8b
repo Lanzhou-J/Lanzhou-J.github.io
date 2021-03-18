@@ -1,0 +1,104 @@
+I"Y<p class="lead">今天终于建起了一个看起来还挺好用的Tech blog，开心。
+参考的视频是Youtube王爵老师的视频
+<a href="https://www.youtube.com/playlist?list=PLK2w-tGRdrj7vzX7Y-GqKPb2QPrHCYZY1">“Jekyll博客系列”</a></p>
+<p>&lt;!–-break-–&gt;</p>
+
+<p>在follow教程安装Jekyll的过程中也遇到了一些问题，比如更新ruby的版本，安装rvm等等，把今天制作Tech blog的开发过程记录一下。</p>
+
+<h3 id="安装jekyll">安装Jekyll</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>brew install ruby
+sudo gem install jekyll
+sudo gem install jekyll bundler
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="关于ruby的版本问题">关于Ruby的版本问题：</h3>
+<p>如果装过ruby了可以用<code class="language-plaintext highlighter-rouge">ruby -v</code>来检查ruby的当前版本。
+在install jekyll的时候发现当前ruby是2.3.7但需要ruby更新的版本。</p>
+
+<p>首先需要安装rvm(ruby version manager)，根据RVM安装说明（<a href="https://rvm.io/rvm/install">Installing RVM</a>）首先需要“install GPG keys used to verify installation package”，但使用安装说明给出的代码 <code class="language-plaintext highlighter-rouge">pgp --keyserver hkp://pool.sks-keyservers.net ...</code>可能会出现这样的error:<code class="language-plaintext highlighter-rouge">gpg: keyserver receive failed: No route to host</code></p>
+
+<p>解决方法如下：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>gpg --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+
+curl -L https://get.rvm.io | bash -s stable
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>然后就可以继续根据这篇教程<a href="https://help.learn.co/en/articles/2789231-how-to-upgrade-from-ruby-2-3-to-2-6">“How to update from ruby 2.3 to 2.6”</a>把ruby更新成2.6.1的版本啦。</p>
+
+<p>现在应该可以成功安装Jekyll了，恭喜！✿✿ヽ(°▽°)ノ✿
+（安装RVM的过程卡了我好久……）</p>
+
+<h3 id="本地使用jekyll">本地使用Jekyll</h3>
+<p>这一部分也是根据王爵老师的教程。<a href="https://www.youtube.com/watch?v=Zt_QzSbyDcw&amp;list=PLK2w-tGRdrj7vzX7Y-GqKPb2QPrHCYZY1&amp;index=1">“Jekyll 博客系列 - 01 快速入门”</a>
+在想存放<code class="language-plaintext highlighter-rouge">myblog</code>的文件夹中</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>jekyll new myblog
+cd myblog/
+sudo bundle install
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>本地运行博客网站：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>bundle exec jekyll serve
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>然后根据log去Server address访问就好：
+<code class="language-plaintext highlighter-rouge">Server address: http://127.0.0.1:4000/</code></p>
+
+<p>可以修改<code class="language-plaintext highlighter-rouge">_config.yml</code>文件和<code class="language-plaintext highlighter-rouge">_posts</code>里的内容，添加新的博文。
+可以添加一个新的文件夹<code class="language-plaintext highlighter-rouge">_drafts</code>用于放草稿。
+添加模板等等更多内容可以看教程，网上很多。</p>
+
+<h3 id="使用github-pages来发布博客">使用Github Pages来发布博客</h3>
+<p>在Github上创建一个新的repo，名字是<code class="language-plaintext highlighter-rouge">XXX.github.io</code>就可以了，XXX是github用户名。
+然后进入<code class="language-plaintext highlighter-rouge">myblog</code>文件夹:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre>git init
+git add .
+git commit -m "&lt;commit message&gt;"
+git remote add origin git@github.com:&lt;github-username&gt;/&lt;github-username&gt;.github.io.git
+git push
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>然后就可以在github-username.github.io看到自己的博客页面了！
+✿✿ヽ(°▽°)ノ✿</p>
+
+<p>发布博客参考教程：</p>
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=7lFxEsF5Rw0&amp;list=PLK2w-tGRdrj7vzX7Y-GqKPb2QPrHCYZY1&amp;index=2">“Jekyll 博客系列 - 02 配置域名访问”</a></li>
+  <li><a href="https://zhuanlan.zhihu.com/p/28321740">“三分钟在GitHub上搭建个人博客”</a></li>
+</ul>
+
+<p>成功发布博客之后会看到第一篇post：</p>
+
+<p><em>Title: Welcome to Jekyll!</em></p>
+
+<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>Jekyll requires blog post files to be named according to the following format:</p>
+
+<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+
+<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+
+:ET

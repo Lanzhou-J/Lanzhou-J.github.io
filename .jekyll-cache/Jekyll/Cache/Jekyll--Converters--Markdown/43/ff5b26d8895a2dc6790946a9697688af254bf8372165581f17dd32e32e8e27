@@ -1,0 +1,13 @@
+I"�<p class="lead">In order to use dactl’s post images with overlays you’ll need to learn how to set them. You do that in post’s YAML frontmatter and I’ll show you how.</p>
+
+<h2 id="yaml-front-matter">YAML Front matter</h2>
+<p>Each Jekyll post starts with YAML Front <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>. For example, this is how this post would look like if I wanted to use all of the options:</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Everything in between those two <code class="language-plaintext highlighter-rouge">---</code> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+:ET
