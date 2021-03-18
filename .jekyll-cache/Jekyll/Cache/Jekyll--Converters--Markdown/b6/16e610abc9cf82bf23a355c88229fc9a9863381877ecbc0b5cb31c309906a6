@@ -1,4 +1,0 @@
-I"<p class="lead">All of the dactl’s configurations has to be set in <code class="language-plaintext highlighter-rouge">_config.yml</code> file. Read on for explanation of all of the features that you can toggle, including configuring the layout.</p>
-
-<p>I’ve split dactl’s <code class="language-plaintext highlighter-rouge">_config.yml</code> into two parts. First part should be configured by you, second contains important Jekyll &amp; build settings and you should leave it alone, unless you know what you are doing.</p>
-:ET
