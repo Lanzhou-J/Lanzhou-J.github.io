@@ -26,7 +26,7 @@ published: true
 brew install ruby
 sudo gem install jekyll
 sudo gem install jekyll bundler
-```
+```javascript
 
 ### 关于Ruby的版本问题：
 如果装过ruby了可以用`ruby -v`来检查ruby的当前版本。
