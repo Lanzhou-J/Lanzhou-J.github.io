@@ -13,7 +13,6 @@ hero: https://source.unsplash.com/collection/430471/
 overlay: blue
 published: true
 ---
-
 今天终于建起了一个看起来还挺好用的Tech blog，开心。
 参考的视频是Youtube王爵老师的视频
 [“Jekyll博客系列”](https://www.youtube.com/playlist?list=PLK2w-tGRdrj7vzX7Y-GqKPb2QPrHCYZY1)
