@@ -118,7 +118,7 @@ echo $RANDOM_THEME
 ### Trouble shooting
 配置zsh时遇到的error（1和2都是在`source ~/.zshrc`的时候出现的）：
 
-1. https://github.com/ohmyzsh/ohmyzsh/issues/6835
+1. [https://github.com/ohmyzsh/ohmyzsh/issues/6835](https://github.com/ohmyzsh/ohmyzsh/issues/6835)
 
    类似这个问题。
 
