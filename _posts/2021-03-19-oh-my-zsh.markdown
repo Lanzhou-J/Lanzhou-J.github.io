@@ -122,15 +122,15 @@ echo $RANDOM_THEME
 
    类似这个问题。
 
-   解决方法：[stack overflow solution](https://stackoverflow.com/questions/61433167/zsh-detects-insecure-completion-dependent-directories)
+   **解决方法**：[stack overflow solution](https://stackoverflow.com/questions/61433167/zsh-detects-insecure-completion-dependent-directories)
 
-   **The first solution**: change the ownership of the problematic directories (doesn't  work)
+   *The first solution*: change the ownership of the problematic directories (doesn't  work)
 
-   The second solution：set `ZSH_DISABLE_COMPFIX=true` (or `"true"` in quotes) in your `.zshrc` file, to tell ZSH to not check for insecure directories. (works for me)
+   *The second solution*：set `ZSH_DISABLE_COMPFIX=true` (or `"true"` in quotes) in your `.zshrc` file, to tell ZSH to not check for insecure directories. (works for me)
 
 2. `compinit:498: no such file or directory: /usr/local/share/zsh/site-functions/_docker-machine`
 
-   解决方法：[https://docs.docker.com/machine/completion/](https://docs.docker.com/machine/completion/)
+   **解决方法**：[https://docs.docker.com/machine/completion/](https://docs.docker.com/machine/completion/)
 
    （参考Zsh部分）
 
@@ -157,4 +157,10 @@ Then reload your shell:
 
 ```
 exec $SHELL -l
+```
+3. 发现使用zsh后没办法使用.bash_profilez中的设置
+**解决方法**：
+```
+#source bash profile
+source ~/.bash_profile
 ```
