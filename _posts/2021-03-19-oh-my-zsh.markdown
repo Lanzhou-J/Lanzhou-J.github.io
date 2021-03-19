@@ -159,7 +159,10 @@ Then reload your shell:
 exec $SHELL -l
 ```
 3. 发现使用zsh后没办法使用.bash_profilez中的设置
-**解决方法**：
+
+  **解决方法**：
+
+  在`.zshrc`文件中加入：
 ```
 #source bash profile
 source ~/.bash_profile
