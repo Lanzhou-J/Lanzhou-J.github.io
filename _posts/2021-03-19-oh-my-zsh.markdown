@@ -65,15 +65,15 @@ chsh -s /bin/zsh
 ### 修改主题风格
 
 [oh-my-zsh官网](ohmyz.sh) : THEMES
-
+[oh-my-zsh themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)
 点进去可以看到海量主题效果，个人最喜欢cloud
 
-#### Cloud
+#### cloud
 （有小云朵☁️和闪电⚡️！）
 
 ![cloud](https://user-images.githubusercontent.com/49100982/108254774-7c416800-716c-11eb-9ea8-8f8cbac82922.jpg)
 
-#### Agnoster
+#### agnoster
 
 (看起来很帅气的一个主题)
 
