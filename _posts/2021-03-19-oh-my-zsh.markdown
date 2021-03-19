@@ -134,36 +134,36 @@ echo $RANDOM_THEME
 
    （参考Zsh部分）
 
-Place the completion script in your a `completion` file within the ZSH configuration directory, such as `~/.zsh/completion/`.
+    Place the completion script in your a `completion` file within the ZSH configuration directory, such as `~/.zsh/completion/`.
 
-```
-mkdir -p ~/.zsh/completion
-curl -L https://raw.githubusercontent.com/docker/machine/v0.16.0/contrib/completion/zsh/_docker-machine > ~/.zsh/completion/_docker-machine
-```
+    ```
+    mkdir -p ~/.zsh/completion
+    curl -L https://raw.githubusercontent.com/docker/machine/v0.16.0/contrib/completion/zsh/_docker-machine > ~/.zsh/completion/_docker-machine
+    ```
 
-Include the directory in your `$fpath`, by adding a like the following to the `~/.zshrc` configuration file.
+    Include the directory in your `$fpath`, by adding a like the following to the `~/.zshrc` configuration file.
 
-```
-fpath=(~/.zsh/completion $fpath)
-```
+    ```
+    fpath=(~/.zsh/completion $fpath)
+    ```
 
-Make sure `compinit` is loaded or do it by adding in `~/.zshrc`:
+    Make sure `compinit` is loaded or do it by adding in `~/.zshrc`:
 
-```
-autoload -Uz compinit && compinit -i
-```
+    ```
+    autoload -Uz compinit && compinit -i
+    ```
 
-Then reload your shell:
+    Then reload your shell:
 
-```
-exec $SHELL -l
-```
+    ```
+    exec $SHELL -l
+    ```
 3. 发现使用zsh后没办法使用.bash_profilez中的设置
 
   **解决方法**：
 
   在`.zshrc`文件中加入：
-```
-#source bash profile
-source ~/.bash_profile
-```
+    ```
+    #source bash profile
+    source ~/.bash_profile
+    ```
