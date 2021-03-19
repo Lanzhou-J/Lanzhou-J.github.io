@@ -116,7 +116,7 @@ echo $RANDOM_THEME
 根据各个主题的docs使用就好。
 
 ### Trouble shooting
-配置zsh时遇到的error（都是在`source ~/.zshrc`的时候出现的）：
+配置zsh时遇到的error（1和2都是在`source ~/.zshrc`的时候出现的）：
 
 1. https://github.com/ohmyzsh/ohmyzsh/issues/6835
 
