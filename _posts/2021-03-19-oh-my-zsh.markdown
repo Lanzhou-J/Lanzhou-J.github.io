@@ -122,7 +122,7 @@ echo $RANDOM_THEME
 
    类似这个问题。
 
-   解决方法：https://stackoverflow.com/questions/61433167/zsh-detects-insecure-completion-dependent-directories
+   解决方法：[stack overflow solution](https://stackoverflow.com/questions/61433167/zsh-detects-insecure-completion-dependent-directories)
 
    **The first solution**: change the ownership of the problematic directories (doesn't  work)
 
@@ -130,7 +130,7 @@ echo $RANDOM_THEME
 
 2. `compinit:498: no such file or directory: /usr/local/share/zsh/site-functions/_docker-machine`
 
-   解决方法：https://docs.docker.com/machine/completion/
+   解决方法：[https://docs.docker.com/machine/completion/](https://docs.docker.com/machine/completion/)
 
    （参考Zsh部分）
 
