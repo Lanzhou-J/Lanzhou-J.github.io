@@ -116,16 +116,10 @@ echo $RANDOM_THEME
 根据各个主题的docs使用就好。
 
 ### Trouble shooting
-配置zsh时遇到的error（2和3都是在`source ~/.zshrc`的时候出现的）：
-1. 发现使用zsh后没办法使用.bash_profilez中的设置
-  **解决方法**：
+配置zsh时遇到的error（都是在`source ~/.zshrc`的时候出现的）：
 
-  在`.zshrc`文件中加入：
-    ```
-    #source bash profile
-    source ~/.bash_profile
-    ```
-2. https://github.com/ohmyzsh/ohmyzsh/issues/6835
+1. https://github.com/ohmyzsh/ohmyzsh/issues/6835
+
    类似这个问题。
 
    **解决方法**：[stack overflow solution](https://stackoverflow.com/questions/61433167/zsh-detects-insecure-completion-dependent-directories)
@@ -133,7 +127,11 @@ echo $RANDOM_THEME
    *The first solution*: change the ownership of the problematic directories (doesn't  work)
 
    *The second solution*：set `ZSH_DISABLE_COMPFIX=true` (or `"true"` in quotes) in your `.zshrc` file, to tell ZSH to not check for insecure directories. (works for me)
-3. `compinit:498: no such file or directory: /usr/local/share/zsh/site-functions/_docker-machine`
+
+2. `compinit:498: no such file or directory: /usr/local/share/zsh/site-functions/_docker-machine`
+
+3. 发现使用zsh后没办法使用.bash_profilez中的设置
+
    **解决方法**：[https://docs.docker.com/machine/completion/](https://docs.docker.com/machine/completion/)
 
    （参考Zsh部分）
@@ -164,10 +162,10 @@ echo $RANDOM_THEME
     ```
 
 
+  **解决方法**：
 
-
-
-
-
-
-
+  在`.zshrc`文件中加入：
+    ```
+    #source bash profile
+    source ~/.bash_profile
+    ```
