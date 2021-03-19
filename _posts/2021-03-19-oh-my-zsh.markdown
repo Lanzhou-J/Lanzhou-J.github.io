@@ -1,0 +1,110 @@
+---
+layout: post
+title:  "用iterm2和oh-my-zsh美化Mac终端"
+date:   2021-03-19 21:43:36 +1100
+categories: jekyll update
+---
+
+公司的电脑早就配置好了，最近突然想用自己的Mac电脑做一些小项目，但terminal用着实在不顺手，而且没有色彩，难以阅读。感觉terminal有可爱的主题和缤纷的色彩用起来心情会好一些！今天花了一些时间忙活用oh-my-zsh强化和美化终端这件事。
+
+### 安装oh-my-zsh
+
+[oh-my-zsh官网](ohmyz.sh) : Install oh-my-zsh
+
+![image-20210319201507039](/assets/image-20210319201507039.png)
+
+
+
+通过curl安装：
+
+```bash
+$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+然后可以在terminal中看到**oh my zsh** is now installed!的提示。
+
+### 修改默认的shell
+
+首先查看当前环境shell
+```bash
+echo $SHELL
+```
+
+查看系统自带哪些shell
+
+```
+cat /etc/shells
+```
+结果：
+```
+/bin/bash
+/bin/csh
+/bin/ksh
+/bin/sh
+/bin/tcsh
+/bin/zsh
+```
+Mac系统自带了zsh，可以通过Homebrew来安装最新的版本。
+
+```
+brew install zsh
+```
+
+查看zsh的版本：
+
+```
+zsh --version
+```
+
+然后将zsh设置为默认的shell：
+
+```
+chsh -s /bin/zsh
+```
+
+### 修改主题风格
+
+[oh-my-zsh官网](ohmyz.sh) : THEMES
+
+点进去可以看到海量主题效果，个人最喜欢cloud
+
+#### Cloud
+（有小云朵☁️和闪电⚡️！）
+
+![cloud](https://user-images.githubusercontent.com/49100982/108254774-7c416800-716c-11eb-9ea8-8f8cbac82922.jpg)
+
+#### Agnoster
+
+(看起来很帅气的一个主题)
+
+![agnoster](https://user-images.githubusercontent.com/49100982/108254745-777cb400-716c-11eb-800a-a8cfa612253f.jpg)
+
+如果想设置主题先cd into root directory，然后`code .`打开vscode，打开`.zshrc`文件，设置新的主题值：
+
+```
+ZSH_THEME="cloud"
+```
+
+保存，在terminal里运行：
+
+```bash
+source ~/.zshrc
+```
+
+就可以看到新的cloud主题了。
+
+如果还不确定喜欢哪种主题想随便试试看，可以根据`.zshrc`文件中的comment提示修改：
+
+```
+ZSH_THEME="random"
+```
+
+这样每次load oh-my-zsh 都会出现新的主题。（每次关掉iTerm2都会跳出新的主题，超开心！）
+
+如果想知道当前使用的主题名称可以运行：
+
+```
+echo $RANDOM_THEME
+```
+
+这些都是oh-my-zsh自带的主题，可以在`~/.oh-my-zsh/themes`目录中看到。
