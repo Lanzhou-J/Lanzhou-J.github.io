@@ -12,11 +12,11 @@ baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 # SNS settings
 RSS: true
-weibo_username: 二哈是小八他哥
-zhihu_username: MEL_LANA
+# weibo_username:
+# zhihu_username:
 github_username:   Lanzhou-J
 twitter_username:  lanzhou99
-facebook_username:  huxpro
+# facebook_username:  huxpro
 
 
 
@@ -33,7 +33,6 @@ anchorjs: false                          # if you want to customize anchor. chec
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
 gems: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
-
 plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
 
 # Markdown settings
