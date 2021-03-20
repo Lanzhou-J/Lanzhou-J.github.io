@@ -1,0 +1,137 @@
+---
+layout: page
+title: "About"
+description: "Hey, this is Lanzhou."
+header-img: "img/about-bg.jpg"
+---
+
+<!-- Language Selector -->
+<select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+    <option value="0" selected> 中文 Chinese </option>
+    <option value="1"> 英语 English </option>
+</select>
+
+<!-- Chinese Version -->
+<div class="zh post-container">
+    <blockquote>
+        通常，每一步都该有进门的感觉，这是初学者的心：一种正在“成为”的状态。 <br>—— 铃木俊隆，《Zen Mind, Beginner's Mind》（禅者的初心）
+    </blockquote>
+    你好，我是Lanzhou。我喜欢设计，编程，数码绘画和园艺。生物博士毕业后，由于对IT的兴趣，我开始了一段新的旅程……<br><br>我对IT技术有极大的热情，尤其是软件开发。我认为IT科技塑造了我们生活的现代世界。<br><br>我喜欢通过自己的技术创作艺术和设计新的事物。<br><br>如果你对我的项目感兴趣，欢迎联系我。
+
+
+
+    <!-- <p style="text-align:right;">
+        —— <a href="http://www.zhihu.com/question/19687065">李书航 － 什么是「共产中文腔调」？ </a>
+    </p> -->
+
+</div>
+
+<!-- English Version -->
+<div class="en post-container">
+    <blockquote>
+        As a rule, each step should have a feeling of entrance. This is beginner's mind: the stage of becoming.
+        <br>
+        -- Shunryu Suzuki, Zen Mind, Beginner's mind
+    </blockquote>
+
+    <p>
+        Hello, I'm Lanzhou. I love design, programming, digital painting and gardening.
+        <br><br>
+        I used to be a bioscience PhD researcher skilled in Statistics, FACS analysis, and Confocal Microscopy. I am pursuing an exciting new career in IT industry now.
+        <br><br>
+        I am passionate about IT technology, especially software development. I think IT technology shaped the modern world that we live in.
+        <br><br>
+        I enjoy making art and creating things using my skills.
+        <br><br>
+        If you are interested, feel free to contact me.
+    </p>
+
+    <!-- <p>
+    If you want to live your life in a creative way, as an artist, you have to not look back too much. You have to be willing to take whatever you’ve done and whoever you were and throw them away.
+    </p>
+
+    <p style="text-align:right;">
+    -- Steve Jobs
+    </p> -->
+
+</div>
+
+<!-- Handle Language Change -->
+<script type="text/javascript">
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    function onLanChange(index){
+        if(index == 0){
+            $zh.style.display = "block";
+            $en.style.display = "none";
+        }else{
+            $en.style.display = "block";
+            $zh.style.display = "none";
+        }
+    }
+    onLanChange(0);
+</script>
+
+
+
+{% if site.duoshuo_username %}
+<!-- 多说评论框 start -->
+<div class="comment">
+    <div class="ds-thread"
+    {% if site.duoshuo_username == "huxblog" %}
+        data-thread-id="1187623191091085319"
+    {% else %}
+        data-thread-key="{{site.duoshuo_username}}/about"
+    {% endif %}
+
+    data-title="{{page.title}}"
+    data-url="{{site.url}}/about/"></div>
+</div>
+<!-- 多说评论框 end -->
+
+<!-- Duoshuo hacking -->
+<input id="dsUser" type="hidden" value="{{site.duoshuo_username}}"  />
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    // dynamic User hacking by Hux
+    var _user = document.getElementById('dsUser').value;
+    // duoshuo comment query.
+    var duoshuoQuery = {short_name: _user };
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+{% endif %}
+
+
+{% if site.disqus_username %}
+<!-- disqus 评论框 start -->
+<div class="comment">
+    <div id="disqus_thread" class="disqus-thread">
+
+    </div>
+</div>
+<!-- disqus 评论框 end -->
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "{{site.disqus_username}}";
+    var disqus_identifier = "{{site.disqus_username}}/{{page.url}}";
+    var disqus_url = "{{site.url}}{{page.url}}";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+{% endif %}
