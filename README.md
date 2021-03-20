@@ -1,7 +1,9 @@
-# Tech blog
+# HuxBlog Boilerplate
 
-A Tech Blog created using Jekyll.
+##### This is the boilerplate of [Hux Blog](https://github.com/Huxpro/huxpro.github.io), all documents is over there!
 
-兰舟的个人技术博客
+#### [View Boilerplate &rarr;](http://huangxuan.me/huxblog-boilerplate/)
 
-Lanzhou-J.github.io
+#### [View Live Hux Blog &rarr;](http://huangxuan.me)
+
+## If you like Hux Blog, Please star [huxpro.github.io repo](https://github.com/Huxpro/huxpro.github.io) instead of this! Thank you!

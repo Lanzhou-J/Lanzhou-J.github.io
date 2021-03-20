@@ -1,11 +1,14 @@
 ---
 layout: post
 title:  "Github Pages + Jekyll搭建极简博客"
+subtitle:
+date:   2021-03-17 23:12:36 +1100
+author:     "Lanzhou"
+header-img: "img/post-bg-unix-linux.jpg"
 tags:
   - 博客
   - jekyll
   - 中文
-date:   2021-03-17 23:12:36 +1100
 categories: jekyll update
 ---
 
