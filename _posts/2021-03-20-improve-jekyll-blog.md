@@ -11,7 +11,11 @@ tags:
 - 中文
 ---
 
-今天用别人做好的主题将博客从原来的“极简风”修改成了现在的样子，愉快。
+今天用别人做好的主题将博客从原来的“极简风”修改成了现在的样子，愉快。<br><br>
+之前的极简风blog:
+![simple-blog](/img/in-post/post-js-version/simple-blog.png)
+感觉现在像装修过的样子：
+![new-blog](/img/in-post/post-js-version/new-blog.png)
 
 参考的是这位博主主题：[Hux blog](http://huangxuan.me/)<br>
 Github repo：[Huxpro/huxpro.github.io](https://github.com/huxpro/huxpro.github.io)<br>
