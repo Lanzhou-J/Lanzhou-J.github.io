@@ -168,3 +168,8 @@ echo $RANDOM_THEME
     #source bash profile
     source ~/.bash_profile
     ```
+
+其他参考文章：
+[iTerm2 + oh-my-zsh 教程（7000字长文）- 知乎](https://zhuanlan.zhihu.com/p/290737828)
+
+[zsh配置 - 简书](https://www.jianshu.com/p/cb238b6ef906)
