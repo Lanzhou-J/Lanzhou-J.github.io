@@ -7,6 +7,13 @@ categories: jekyll update
 
 公司的电脑早就配置好了，最近突然想用自己的Mac电脑做一些小项目，但terminal用着实在不顺手，而且没有色彩，难以阅读。感觉terminal有可爱的主题和缤纷的色彩用起来心情会好一些！今天花了一些时间忙活用oh-my-zsh强化和美化终端这件事。
 
+### 关于iTerm2
+iTerm2是一款非常好用的终端管理器，可以直接在[iTerm2](https://iterm2.com/)官网下载安装。
+#### 修改色彩主题
+   打开iTerm2，菜单栏点击iTerm2 -> Profiles -> Colors -> Color Presets
+#### 修改字体样式
+   打开iTerm2，菜单栏点击iTerm2 -> Profiles -> Text
+
 ### 安装oh-my-zsh
 
 [oh-my-zsh官网](ohmyz.sh) : Install oh-my-zsh
@@ -173,3 +180,4 @@ echo $RANDOM_THEME
    - [iTerm2 + oh-my-zsh 教程（7000字长文）- 知乎](https://zhuanlan.zhihu.com/p/290737828)
    - [zsh配置 - 简书](https://www.jianshu.com/p/cb238b6ef906)
    - [MacOS 安装配置 zsh - 简书](https://www.jianshu.com/p/02276c671ee8)
+   - [iTerm2 都不会用，还敢自称老司机？](https://zhuanlan.zhihu.com/p/112383265)
