@@ -170,7 +170,7 @@ echo $RANDOM_THEME
     ```
 
 其他参考文章：
-[iTerm2 + oh-my-zsh 教程（7000字长文）- 知乎](https://zhuanlan.zhihu.com/p/290737828)
+   - [iTerm2 + oh-my-zsh 教程（7000字长文）- 知乎](https://zhuanlan.zhihu.com/p/290737828)
 
-[zsh配置 - 简书](https://www.jianshu.com/p/cb238b6ef906)
-[MacOS 安装配置 zsh - 简书](https://www.jianshu.com/p/02276c671ee8)
+   - [zsh配置 - 简书](https://www.jianshu.com/p/cb238b6ef906)
+   - [MacOS 安装配置 zsh - 简书](https://www.jianshu.com/p/02276c671ee8)
