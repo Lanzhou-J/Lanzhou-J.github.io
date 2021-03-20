@@ -11,7 +11,7 @@ baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 # SNS settings
-RSS: false
+RSS: true
 # weibo_username:
 # zhihu_username:
 github_username:   Lanzhou-J
@@ -34,7 +34,7 @@ anchorjs: false                          # if you want to customize anchor. chec
 # from PR#40, to support local preview for Jekyll 3.0
 gems: [jekyll-paginate]
 
-plugins: [jekyll-paginate, jekyll-seo-tag]
+plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
 
 # Markdown settings
 # replace redcarpet to kramdown,
