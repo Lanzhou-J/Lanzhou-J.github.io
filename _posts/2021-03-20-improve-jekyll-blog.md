@@ -12,7 +12,7 @@ tags:
 ---
 
 今天用别人做好的主题将博客从原来的“极简风”修改成了现在的样子，愉快。<br><br>
-之前的极简风blog:
+之前的极简风blog（主题 minima）:
 ![simple-blog](/img/in-post/post-js-version/simple-blog.png)
 感觉现在像装修过的样子：
 ![new-blog](/img/in-post/post-js-version/new-blog.png)
