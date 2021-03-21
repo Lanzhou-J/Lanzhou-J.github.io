@@ -9,7 +9,7 @@ tags:
   - 博客
   - jekyll
   - 中文
-categories: jekyll update
+# categories: blog
 ---
 
 今天终于建起了一个看起来还挺好用的Tech blog，开心。

@@ -9,6 +9,7 @@ tags:
 - 博客
 - jekyll
 - 中文
+categories: blog
 ---
 
 今天用别人做好的主题将博客从原来的“极简风”修改成了现在的样子，愉快。<br><br>
