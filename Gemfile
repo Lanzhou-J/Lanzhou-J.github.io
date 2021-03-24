@@ -32,3 +32,4 @@ gem 'jekyll-admin', group: :jekyll_plugins
 gem 'jekyll-seo-tag'
 gem 'jekyll-paginate', '~> 1.1.0'
 gem "kramdown-parser-gfm", '~> 1.1.0'
+gem "webrick", "~> 1.7"
