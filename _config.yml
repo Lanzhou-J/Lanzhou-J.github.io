@@ -1,6 +1,6 @@
 # Site settings
 title: Lanzhou's Tech Blog
-SEOTitle: 兰舟的博客 | Lanzhou‘s Tech Blog
+SEOTitle: Lanzhou‘s Tech Blog | 兰舟的博客
 header-img: img/home-bg.jpg
 email: lzjiang99@gmail.com
 description: "Hi, I'm Lanzhou. I am an enthusiastic developer with a cell biology research background. I love challenging myself and learn new things! Here are my current projects."
@@ -33,7 +33,7 @@ anchorjs: false                          # if you want to customize anchor. chec
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
-gems: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
+# gems: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
 plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
 
 # Markdown settings
