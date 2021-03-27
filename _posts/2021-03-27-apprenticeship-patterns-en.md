@@ -20,7 +20,7 @@ tags:
 
 **This book is suitable for:** those who want to switch careers to software development, IT majors about to enter the workplace, programmers in the internship stage, protege developers, and aspiring developers who want to further improve their skills.
 
-Readers can read this book with a fairly relaxed mind. This book is not a book about how to design or build software. **It is a book about designing the beginning of your career as a software developer and help you to become great at what you do.** Excluding the Introduction and Conclusion, there are five chapters in the book ("Chapter Two Emptying Cup", "Chapter Three Walking the Long Road", "Chapter Four Accurate Self-assessment", "Chapter 5 Perpetual Learning", "Chapter 6 Construct your Curriculum"). There are 35 "Patterns" in total, and each Pattern is like a individual card containing "Context" and "Problem", "Solution", and "Action" etc. If you are not in a hurry to "finish" and return this book to the library like me, then you can treat this book as a reference book on your career development path, and refer to the corresponding "pattern" when you encounter specific problems.
+Readers can read this book with a fairly relaxed mind. This book is not a book about how to design or build software. **It is a book about designing the beginning of your career as a software developer and help you to become great at what you do.** Excluding the Introduction and Conclusion, there are five chapters in the book ("Chapter Two Emptying Cup", "Chapter Three Walking the Long Road", "Chapter Four Accurate Self-assessment", "Chapter 5 Perpetual Learning", "Chapter 6 Construct your Curriculum"). There are 35 "Patterns" in total, and each Pattern is like a individual card containing "Context" and "Problem", "Solution", and "Action" etc. If you are not in a hurry to "finish reading" and return this book to the library like me, then you can treat this book as a reference book on your career development path, and refer to the corresponding "pattern" when you encounter specific problems.
 
 #### My top ten favorite "Patterns":
 
@@ -60,7 +60,7 @@ Readers can read this book with a fairly relaxed mind. This book is not a book a
    - Tools for maintaining records are also important Breakable Toys (e.g. this Tech blog!)
  
 9. **Share what you learn**
-   - In the early stages of the apprenticeship, develop the habit of regularly sharing the things that you learned. (use Tech Blog, organise buddy catch-up meetings, etc.)
+   - In the early stages of the apprenticeship, develop the habit of regularly sharing the things that you learned. *(use Tech Blog, organise buddy catch-up meetings, etc.)*
    - Teaching others is a very powerful learning method. ("When one is teaching, two are learning.")
 
 10. **Reading List**
