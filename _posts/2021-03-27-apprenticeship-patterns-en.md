@@ -15,9 +15,9 @@ tags:
 ![Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman](https://covers.booktopia.com.au/big/9781449379407/0000/apprenticeship-patterns.jpg)
 
 
-This book is suitable for: those who want to switch careers to software development, IT majors about to enter the workplace, programmers in the internship stage, protege developers, and aspiring developers who want to further improve their skills.
+**This book is suitable for:** those who want to switch careers to software development, IT majors about to enter the workplace, programmers in the internship stage, protege developers, and aspiring developers who want to further improve their skills.
 
-Readers can read this book with a fairly relaxed mind. Excluding the foreword and summary, there are five chapters in the book ("Chapter Two Emptying Cup", "Chapter Three Walking the Long Road", "Chapter Four Accurate Self-assessment", "Chapter 5 Perpetual Learning", "Chapter 6 Construct your Curriculum") There are 35 "Patterns" in total, and each Pattern is like a individual card containing "Context" and "Problem", "Solution", and "Action" etc. If you are not in a hurry to "finish" and return this book to the library like me, then you can treat this book as a reference book on your career development path, and refer to the corresponding "pattern" when you encounter specific problems.
+Readers can read this book with a fairly relaxed mind. This book is not a book about how to design or build software. **It is a book about designing the beginning of your career as a software developer and help you to become great at what you do.** Excluding the Introduction and Conclusion, there are five chapters in the book ("Chapter Two Emptying Cup", "Chapter Three Walking the Long Road", "Chapter Four Accurate Self-assessment", "Chapter 5 Perpetual Learning", "Chapter 6 Construct your Curriculum"). There are 35 "Patterns" in total, and each Pattern is like a individual card containing "Context" and "Problem", "Solution", and "Action" etc. If you are not in a hurry to "finish" and return this book to the library like me, then you can treat this book as a reference book on your career development path, and refer to the corresponding "pattern" when you encounter specific problems.
 
 #### My top ten favorite "Patterns":
 
