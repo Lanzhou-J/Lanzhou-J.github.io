@@ -1,5 +1,5 @@
 ---
-title: A slim book recommended for protege programmers - Apprenticeship Patterns
+title: A slim book recommended for new programmers - Apprenticeship Patterns
 layout: post
 subtitle: null
 date: '2021-03-27 15:45:00 +1100'
