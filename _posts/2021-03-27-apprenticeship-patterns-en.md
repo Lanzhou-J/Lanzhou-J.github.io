@@ -10,7 +10,7 @@ tags:
 - English
 ---
 
-### A slim book recommended for protege programmers - *Apprenticeship Patterns*
+### A slim book recommended for new programmers - *Apprenticeship Patterns*
 
 ![Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman](https://covers.booktopia.com.au/big/9781449379407/0000/apprenticeship-patterns.jpg)
 
