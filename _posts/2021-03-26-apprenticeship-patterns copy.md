@@ -4,7 +4,7 @@ layout: post
 subtitle: null
 date: '2021-03-26 12:45:00 +1100'
 author: Lanzhou
-header-img: img/post-bg-unix-linux.jpg
+header-img: img/home-bg-o.jpg
 tags:
 - reading
 - 中文
