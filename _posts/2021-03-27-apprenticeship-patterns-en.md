@@ -1,5 +1,5 @@
 ---
-title: A slim book recommended for new programmers - Apprenticeship Patterns
+title: A Slim Book Every Junior Developer Needs To Read - Apprenticeship Patterns
 layout: post
 subtitle: null
 date: '2021-03-27 15:45:00 +1100'
@@ -10,7 +10,7 @@ tags:
 - English
 ---
 
-### A slim book recommended for new programmers - *Apprenticeship Patterns*
+### A Slim Book Every Junior Developer Needs To Read - *Apprenticeship Patterns*
 
 ![Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman](https://covers.booktopia.com.au/big/9781449379407/0000/apprenticeship-patterns.jpg)
 
