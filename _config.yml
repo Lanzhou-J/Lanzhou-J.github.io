@@ -81,10 +81,7 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 
 # Friends
 friends: [
-    {
-        title: "Lanzhou",
-        href: "http://lanzhou-j.github.io"
-    },{
+   {
         title: "Harrison Malone",
         href: "https://www.harrisonmalone.dev/"
     },{
