@@ -44,7 +44,7 @@ Readers can read this book with a fairly relaxed mind. Excluding the foreword an
    - Willing to provide mentoring to those who seek it from you, passing along what you have learned from your mentors
 
 6. **Expand your bandwidth**
-   - Sometimes it is necessary to develop some necessary methods and skills to efficiently acquire, understand, maintain and apply new knowledge.
+   - Sometimes it is necessary to develop some methods and skills to efficiently acquire, understand, maintain and apply new knowledge.
    - Seek new knowledge and experience from multiple dimensions: such as paying attention to online tutorials, communicating with authors, participating in conferences, etc.
  
 7. **Breakable Toys**
