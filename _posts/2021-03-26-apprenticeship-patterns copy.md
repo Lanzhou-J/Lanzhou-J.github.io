@@ -13,7 +13,10 @@ tags:
 ### 推荐给学徒期程序员的一本小书：《软件开发者路线图》
 
 ![《软件开发者路线图：从学徒到高手》](https://covers.booktopia.com.au/big/9781449379407/0000/apprenticeship-patterns.jpg)
-
+<center><div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">《软件开发者路线图》- 作者 Dave H. Hoover，Adewale Oshineye</div></center>
 
 
 适合阅读这本书的人：想要转行做软件开发的人、即将走入职场的IT专业大学生、实习阶段的程序员、学徒程序员、想要进一步提高自己技术水平的程序员。

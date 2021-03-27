@@ -13,7 +13,10 @@ tags:
 ### A Slim Book Every Junior Developer Needs To Read - *Apprenticeship Patterns*
 
 ![Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman](https://covers.booktopia.com.au/big/9781449379407/0000/apprenticeship-patterns.jpg)
-
+<center><div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">Apprenticeship Patterns by Dave Hoover & Ade Oshineye</div></center>
 
 **This book is suitable for:** those who want to switch careers to software development, IT majors about to enter the workplace, programmers in the internship stage, protege developers, and aspiring developers who want to further improve their skills.
 
