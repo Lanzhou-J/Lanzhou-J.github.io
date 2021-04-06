@@ -1,0 +1,44 @@
+---
+title: 常用git命令集合
+layout: post
+subtitle: null
+date: '2021-04-06 21:54:00'
+author: Lanzhou
+header-img: img/post-bg-unix-linux.jpg
+tags:
+- wiki
+- git
+- 中文
+---
+
+### Git是什么？
+
+Git是世界上最先进的分布式版本控制系统。(distributed version-control system for tracking changes in source code during software development).
+
+![git基本指令](/img/in-post/gitCLI.jpg)
+
+- Git config的意义：需要填写用户名和邮箱作为一个标识。
+- Git只能跟踪文本文件的改动（e.g. txt文件，代码etc.）
+
+**Git cmd：**
+
+- `git init` (把一个目录设置为git repository)
+- `git add filename.type` （把一个文件上传到index -staging environment）
+- `git add .` (所有文件上传到staging environment)
+- `git status` 查看git的状态
+- commit就是上传到head的状态，一个永久的record： `git commit -m “revision one” `
+          -m 的意思是生成一个message
+- `git checkout filename.type` 回滚到staging中的状态 overwrite本地文件
+- `git reset HEAD filename.type` 可以直接unstage 在staging environment里的东西
+- `git log`可以查看commiting的记录
+- `git diff readme.txt` - 可以查看read.txt文件到底改了什么内容
+- `git add` + `git commit` - 提交文件或提交修改
+- `git branch -d <branch>` - 删除本地branch
+
+
+版本回退：
+- `git log` - 可以查看历史记录
+- `git log -pretty=oneline` (非常清晰地查看历史记录)
+- `git reset --hard HEAD^` 回退到上一个版本
+- `git reset --hard HEAD^^` 回退到上上个版本
+- `git reset --hard HEAD~100` 回退到前100个版本
