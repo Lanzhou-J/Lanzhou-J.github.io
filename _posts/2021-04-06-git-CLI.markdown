@@ -28,23 +28,25 @@ Why do we need to do version control? Well, this is basically my life without Gi
 
 **Git cmd：**
 
-- `git init` (把一个目录设置为git repository)
-- `git add filename.type` （把一个文件上传到index -staging environment）
-- `git add .` (所有文件上传到staging environment)
+最常用：
+- `git init` 把一个本地目录设置为git repository
+- `git clone` 拷贝一份remote repository，常用于在GitHub下载项目
+- `git add <filename.type>` 把一个文件上传到index -staging environment
+- `git add .` 所有文件上传到staging environment
+- `git commit -m “revision one” ` commit就是上传到head的状态，一个永久的record： -m 的意思是生成一个message
 - `git status` 查看git的状态
-- commit就是上传到head的状态，一个永久的record： `git commit -m “revision one” `
-          -m 的意思是生成一个message
+- `git pull` 取回远程主机某个分支的更新，再与本地的指定分支合并
+
+其他：
 - `git checkout filename.type` 回滚到staging中的状态 overwrite本地文件
 - `git reset HEAD filename.type` 可以直接unstage 在staging environment里的东西
-- `git log`可以查看commiting的记录
-- `git diff readme.txt` - 可以查看read.txt文件到底改了什么内容
-- `git add` + `git commit` - 提交文件或提交修改
-- `git branch -d <branch>` - 删除本地branch
-
+- `git diff readme.txt` 可以查看read.txt文件到底改了什么内容
+- `git commit --amend` 修改上一条提交的 commit message
+- `git branch -d <branch>` 删除本地branch
 
 版本回退：
-- `git log` - 可以查看历史记录
-- `git log -pretty=oneline` (非常清晰地查看历史记录)
+- `git log` 可以查看历史记录
+- `git log -pretty=oneline` 非常清晰地查看历史记录
 - `git reset --hard HEAD^` 回退到上一个版本
 - `git reset --hard HEAD^^` 回退到上上个版本
 - `git reset --hard HEAD~100` 回退到前100个版本
