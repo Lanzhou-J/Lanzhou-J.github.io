@@ -1,5 +1,5 @@
 ---
-title: 常用git命令集合
+title: Commonly used Git commands
 layout: post
 subtitle: null
 date: '2021-04-06 21:54:00'
@@ -11,14 +11,20 @@ tags:
 - 中文
 ---
 
-### Git是什么？
+### What is Git？
 
-Git是世界上最先进的分布式版本控制系统。(distributed version-control system for tracking changes in source code during software development).
+Git  is the most commonly used distributed version-control system for tracking changes in source code during software development.
 
-![git基本指令](/img/in-post/gitCLI.jpg)
 
-- Git config的意义：需要填写用户名和邮箱作为一个标识。
+Why do we need to do version control? Well, this is basically my life without Git as a PhD:
+
+![life-without-git](/img/in-post/final-doc.png)
+
+![common-git-commands](/img/in-post/gitCLI.jpg)
+
+
 - Git只能跟踪文本文件的改动（e.g. txt文件，代码etc.）
+- Git config的意义：需要填写用户名和邮箱作为一个标识。
 
 **Git cmd：**
 
