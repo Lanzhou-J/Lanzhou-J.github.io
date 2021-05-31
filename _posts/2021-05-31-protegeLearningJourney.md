@@ -10,7 +10,9 @@ tags:
 ---
 
 What I learned as a Protege Developer
-Keywords:
+
+
+**Keywords:**
 - C#
 - Dotnet
 - Clean Code
