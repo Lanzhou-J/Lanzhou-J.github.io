@@ -16,8 +16,33 @@ What I learned as a Protege Developer
 
 
 **Keywords:**
+
+Language:
 - C#
+- JavaScript
+- TypeScript
+- HTML
+- CSS
+- Ruby
+- Markdown
+
+Framework:
+- React
+- Ruby on Rails
 - Dotnet
+
+Tool/Skill:
+- Docker
+- BuildKite
+- Kubernetes (Jupiter)
+- AWS
+- SonarQube
+- Terminal Command Line
+- Git
+
+Concept:
+- Inside-Out (Top-Bottom)
+- Outside-In (Bottom-Top)
 - Clean Code
 - SOLID
 - 4 Rules of Simple Design
@@ -26,38 +51,23 @@ What I learned as a Protege Developer
 - Unit Test
 - Integration Test
 - Acceptance Test
-- Inside-Out (Top-Bottom)
-- Outside-In (Bottom-Top)
-- TypeScript
 - Agile
 - Scrum
-
-
 - Clean Architecture
-- Docker
 - CICD
-- AWS
-- Kubernetes (Jupiter)
-- SonarQube
 - REST
 - HTTP
 - Immutable
 - Factory Pattern
 - Test Report
-- BuildKite
-
 - Command query separation
 - Yagni
 - Object composition
 - OOP
 
 
-- Terminal Command Line
-- Git
-- Markdown
-- CSS
-- React
-- JavaScript
+
+
 
 
 
