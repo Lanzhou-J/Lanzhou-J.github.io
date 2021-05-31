@@ -7,6 +7,9 @@ author: Lanzhou
 header-img: img/post-bg-unix-linux.jpg
 tags:
 - English
+- wiki
+- study
+- work
 ---
 
 What I learned as a Protege Developer
