@@ -8,6 +8,7 @@ header-img: img/post-bg-unix-linux.jpg
 tags:
 - wiki
 - work
+- IDE
 ---
 
 调整调整IntelliJ IDEA菜单栏及编辑器字体大小
