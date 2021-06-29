@@ -168,7 +168,7 @@
 {% if site.ga_measurement_id %}
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QZ57LV5RN9"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{site.ga_measurement_id}}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -182,7 +182,7 @@
 {% if site.ga_tracking_id %}
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-192642756-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{site.ga_tracking_id}}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
