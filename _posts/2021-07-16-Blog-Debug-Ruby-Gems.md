@@ -49,7 +49,7 @@ BUNDLED WITH
 
 一个非常简明扼要的回答：取决于你在做什么，如果你在做一个ruby gem，那么**不能**把Gemfile.lock放进项目中，而如果你在做一个Rails app，那么应当把Gemfile.lock保留在项目中。在Yehuda Katz的博文中（见参考资料），他解释了这一点：“Gems 依赖于一个名字和一个版本范围, 并且不关心dependencies具体从何而来。 Rails apps 的发布更为可控, 并需要保证所有环境(dev, ci, production)使用完全一致的代码。”
 
-以colorize这个ruby gem为例，在我们使用它的时候，我们会在gemfile中添加`gem 'colorize', '~> 0.8.1'`，而这个gem command并不会使这个gem的dependencies精确依据Gemfile.lock文件中的版本。（就算可以也没人想要这样做，因为用户使用gem的时候并无需使用你开发gem时使用的那些dependencies的相同版本）
+以[colorize](https://rubygems.org/gems/colorize)这个ruby gem为例，在我们使用它的时候，我们会在gemfile中添加`gem 'colorize', '~> 0.8.1'`，而这个gem command并不会使这个gem的dependencies精确依据Gemfile.lock文件中的版本。（就算可以也没人想要这样做，因为用户--主要是开发者们在使用gem的时候并无需使用你开发gem时使用的那些dependencies的相同版本）
 
 如果你在开发一个app，需要考虑到发布、维护的整个过程，那么你应当保留Gemfile.lock，因为在不同环境都需要使用bundler tool，所以dependencies的版本精确度就很重要，它保证了你在各个环境都在运行相同的app。
 
@@ -67,6 +67,10 @@ gem "cucumber", ">=0.8.5", "<0.9.0"
 如果仅仅使用“>=0.8.1”那么只要版本比0.8.1等于或比它更新都可以接受，超过0.9也可以，不会有上限。
 
 （如果文中有错误欢迎指正，如果有建议和疑惑也欢迎写在评论中。）
+
+**后记：**
+
+发现debug之后允许自己花一点时间“掉进兔子洞（go down a rabbit hole）”是很好的学习方法，在试图解决问题的过程中，一个问题会把人引向另一个问题……工作的时候没什么时间去深挖问题背后的问题，自己学习的时候觉得花些时间也很值得。这也让我想起去年三月份刚开始转行学习ruby时发布过的一个ruby gem作业：[DinnerChoice](https://rubygems.org/gems/DinnerChoice)，发现果然还保留着Gemfile.lock……现在已经快过去一年半了，回头看自己写的代码发现了很多可以改进的地方，可以新增加的功能，以后有时间可以继续琢磨改进。记得一位导师也曾经说过，根据学到的内容不停地改进同一个项目是非常好的学习方法。
 
 ---
 ### 参考资料：
