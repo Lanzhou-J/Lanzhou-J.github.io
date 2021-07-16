@@ -66,8 +66,8 @@ gem "cucumber", ">=0.8.5", "<0.9.0"
 
 如果仅仅使用“>=0.8.1”那么只要版本比0.8.1等于或比它更新都可以接受，超过0.9也可以，不会有上限。
 
-
 （如果文中有错误欢迎指正，如果有建议和疑惑也欢迎写在评论中。）
+
 ---
 ### 参考资料：
    - [Bundle gem load error in Ruby - Paul Meinshausen](https://stackoverflow.com/a/61627799/12346593)
