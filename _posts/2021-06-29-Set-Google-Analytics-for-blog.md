@@ -67,9 +67,6 @@ Click 'Start for free'.
   - Example:
     1. Add the tag in footer.html file
         ```
-        <!-- Google Analytics -->
-        {% if site.ga_measurement_id %}
-
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id={{site.ga_measurement_id}}"></script>
         <script>
