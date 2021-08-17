@@ -36,4 +36,11 @@ Google offers both free and paid version of Google Analytics. Small businesses (
 Google Analytics 4 is not an upgrade of Universal Analytics. It is a completely new version of Google analytics with different sets of reports.
 Google Analytics 4 is the future of Google Analytics!
 
-(Add a form to compare GA3 & GA4)
+*5 Key Advantages of GA4 compared with GA3:*
+1. Machine learning -- GA4 can generate automatic insights and predictable insights based on Google's new machine learning technology.
+2. Cross-device/platform -- More robust and reliable cross-device and cross-platform tracking.
+3. Event tracking automation -- GA4 automatically tracks for certain types of events (e.g. scroll, video engagement, site search etc.).
+4. BigQuery -- GA4 comes with a Free connection to BigQuery(Cloud data warehouse).
+5. Built-in IP anonymization feature -- GA4 pays more attention to end user privacy.
+
+However, there are also comments showing that the user interface and data reports of GA4 are more complicated. For users who only host a website without an APP, some new features are not useful to them at all. So if you are already familiar with GA3 user interface, I would suggest you think twice before replacing GA3 with GA4. In summary, whether you want to replace GA3 with the new version GA4 depends on your personal needs and interests.
