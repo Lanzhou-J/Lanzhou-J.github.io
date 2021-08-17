@@ -66,7 +66,7 @@ Click 'Start for free'.
   - Global site tag(gtag.js) can be found under "Tagging Instructions".
   - Example:
     1. Add the tag in footer.html file
-        ```
+        ```javascript
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id={{site.ga_measurement_id}}"></script>
         <script>
@@ -76,7 +76,6 @@ Click 'Start for free'.
 
           gtag('config', "{{site.ga_measurement_id}}");
         </script>
-        {% endif %}
         ```
     2. Add GA4 measurement ID in config YAML file.
       ```
