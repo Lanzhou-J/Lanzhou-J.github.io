@@ -60,7 +60,29 @@ I first set up GA4 following the guide in this article([[GA4] Set up Analytics f
 Click 'Start for free'.
 
 1. Create an Analytics account
-  ![GoogleAnalyticsAdmin](/img/in-post/google_analytics_admin.png)
 2. Create a Google Analytics 4 property
 3. Add a data stream
 4. Set up data collection
+  - Global site tag(gtag.js) can be found under "Tagging Instructions".
+  - Example:
+    1. Add the tag in footer.html
+      ```javascript
+      <!-- Google Analytics -->
+      {% if site.ga_measurement_id %}
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{site.ga_measurement_id}}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', "{{site.ga_measurement_id}}");
+      </script>
+      {% endif %}
+      ```
+    2. Add GA4 measurement ID in config YAML file.
+      ```yaml
+      # Google Analytics GA4
+      ga_measurement_id: 'G-XXXXXXXXXX'
+      ```
