@@ -13,6 +13,8 @@ tags:
 
 ### What is Google Analytics?
 
+![GoogleAnalytics](/img/in-post/google_analytics.png)
+
 Google Analytics is a platform that can help developers and business owners to collect and analyze data. Take my tech blog as an example. I am most interested in data related to:
 
 - Which article has the highest click-through rate? 
