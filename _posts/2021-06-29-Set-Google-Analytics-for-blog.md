@@ -65,9 +65,9 @@ Click 'Start for free'.
 4. Set up data collection
   - Global site tag(gtag.js) can be found under "Tagging Instructions".
   - Example:
-    1. Add the tag in footer.html
-    
-      ```javascript
+    1. Add the tag in footer.html file
+
+      ```
       <!-- Google Analytics -->
       {% if site.ga_measurement_id %}
 
@@ -83,7 +83,7 @@ Click 'Start for free'.
       {% endif %}
       ```
     2. Add GA4 measurement ID in config YAML file.
-      ```yaml
+      ```
       # Google Analytics GA4
       ga_measurement_id: 'G-XXXXXXXXXX'
       ```
