@@ -53,7 +53,7 @@ For learning purpose I set both GA4 and GA3 for this blog.
 
 #### Set up GA4
 
-I first set up GA4 following the guide in this article([https://support.google.com/analytics/answer/9304153](https://support.google.com/analytics/answer/9304153))
+I first set up GA4 following the guide in this article([[GA4] Set up Analytics for a website and/or app](https://support.google.com/analytics/answer/9304153))
 
 [https://marketingplatform.google.com/about/analytics/](https://marketingplatform.google.com/about/analytics/)
 
