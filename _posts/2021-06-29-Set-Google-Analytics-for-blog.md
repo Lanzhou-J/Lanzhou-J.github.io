@@ -46,3 +46,21 @@ Google Analytics 4 is the future of Google Analytics!
 5. Built-in IP anonymization feature -- GA4 pays more attention to end user privacy.
 
 However, there are also comments showing that the user interface and data reports of GA4 are more complicated. For users who only host a website without an APP, some new features are not useful to them at all. So if you are already familiar with GA3 user interface, I would suggest you think twice before replacing GA3 with GA4. In summary, whether you want to replace GA3 with the new version GA4 depends on your personal needs and interests.
+
+### Set up Google analytics for the blog
+
+For learning purpose I set both GA4 and GA3 for this blog. 
+
+#### Set up GA4
+
+I first set up GA4 following the guide in this article([https://support.google.com/analytics/answer/9304153](https://support.google.com/analytics/answer/9304153))
+
+[https://marketingplatform.google.com/about/analytics/](https://marketingplatform.google.com/about/analytics/)
+
+Click 'Start for free'.
+
+1. Create an Analytics account
+  ![GoogleAnalyticsAdmin](/img/in-post/google_analytics_admin.png)
+2. Create a Google Analytics 4 property
+3. Add a data stream
+4. Set up data collection
