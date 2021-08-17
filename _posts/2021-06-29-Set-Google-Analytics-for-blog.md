@@ -55,9 +55,7 @@ For learning purpose I set both GA4 and GA3 for this blog.
 
 I first set up GA4 following the guide in this article([[GA4] Set up Analytics for a website and/or app](https://support.google.com/analytics/answer/9304153))
 
-[https://marketingplatform.google.com/about/analytics/](https://marketingplatform.google.com/about/analytics/)
-
-Click 'Start for free'.
+On the website -- [https://marketingplatform.google.com/about/analytics/](https://marketingplatform.google.com/about/analytics/), click 'Start for free'.
 
 1. Create an Analytics account
 2. Create a Google Analytics 4 property
@@ -66,17 +64,18 @@ Click 'Start for free'.
   - Global site tag(gtag.js) can be found under "Tagging Instructions".
   - Example:
     1. Add the tag in footer.html file
-        ```javascript
+        ```html
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id={{site.ga_measurement_id}}"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=site.ga_measurement_id"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', "{{site.ga_measurement_id}}");
+          gtag('config', "site.ga_measurement_id");
         </script>
         ```
+       Wrap ```site.ga_measurement_id``` with double curly bracket. 
     2. Add GA4 measurement ID in config YAML file.
       ```
       # Google Analytics GA4
