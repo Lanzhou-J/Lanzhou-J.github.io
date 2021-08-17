@@ -66,6 +66,7 @@ Click 'Start for free'.
   - Global site tag(gtag.js) can be found under "Tagging Instructions".
   - Example:
     1. Add the tag in footer.html
+    
       ```javascript
       <!-- Google Analytics -->
       {% if site.ga_measurement_id %}
