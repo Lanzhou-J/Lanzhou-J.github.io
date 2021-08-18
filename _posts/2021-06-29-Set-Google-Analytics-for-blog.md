@@ -82,9 +82,17 @@ On the website -- [https://marketingplatform.google.com/about/analytics/](https:
       # Google Analytics GA4
       ga_measurement_id: 'G-XXXXXXXXXX'
       ```
+5. Set up IP address filters (optional)
+  - IP adress filters can help you exclude internal traffic.
+    1. Define your internal IP address in 'Admin' - 'Data Streams' - 'More Tagging Settings' - 'Define internal traffic' - 'Create'.
+    ![GoogleAnalyticsIPRule](/img/in-post/google_analytics_IPRule.png)
+    2. Create IP filter in 'Admin' - 'Data Settings' - 'Data Filters' - 'Create Filter' - 'Internal Traffic' - set 'Testing' Filter state - 'Create'.
+    3. Test the IP filter in 'Reports' - 'Real-time'.
+    4. Activate the IP filter - 'Save'.
 
 GA4 user interface:
  ![GoogleAnalyticsUI](/img/in-post/google_analytics_UI.png)
+
 
 #### Set up Universal Analytics (GA3)
 After setting up GA4, I set up Universal Analytics and its views with filters under the same Analytics Account following these tutorial: [Google Analytics for Beginners: 1.3 Google Analytics setup](https://analytics.google.com/analytics/academy/course/6/unit/1/lesson/3), [Google Analytics for Beginners: 1.4 How to set up views with filters](https://analytics.google.com/analytics/academy/course/6/unit/1/lesson/4).
