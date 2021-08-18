@@ -96,7 +96,7 @@ GA4 user interface:
 
 
 #### Set up Universal Analytics (GA3)
-After setting up GA4, I set up Universal Analytics and its views with filters under the same Analytics Account following these tutorial: [Google Analytics for Beginners: 1.3 Google Analytics setup](https://analytics.google.com/analytics/academy/course/6/unit/1/lesson/3), [Google Analytics for Beginners: 1.4 How to set up views with filters](https://analytics.google.com/analytics/academy/course/6/unit/1/lesson/4).
+After setting up GA4, I set up Universal Analytics and its views with filters under the same Analytics Account following these tutorials: [Google Analytics for Beginners: 1.3 Google Analytics setup](https://analytics.google.com/analytics/academy/course/6/unit/1/lesson/3), [Google Analytics for Beginners: 1.4 How to set up views with filters](https://analytics.google.com/analytics/academy/course/6/unit/1/lesson/4).
 
 You can also follow the instructions in this article: [Set up Analytics for a website (Universal Analytics)](https://support.google.com/analytics/answer/10269537?hl=en)
 
