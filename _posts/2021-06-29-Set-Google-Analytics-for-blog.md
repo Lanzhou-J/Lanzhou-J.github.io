@@ -84,6 +84,7 @@ On the website -- [https://marketingplatform.google.com/about/analytics/](https:
       ```
 5. Set up IP address filters (optional)
   - IP adress filters can help you exclude internal traffic.
+  - Reference article: [How To Set Up Address Filters in Google Analytics 4(GA4)](https://witneyseoguy.co.uk/blog/set-up-ip-address-filters-in-google-analytics-4/)
     1. Define your internal IP address in 'Admin' - 'Data Streams' - 'More Tagging Settings' - 'Define internal traffic' - 'Create'.
     ![GoogleAnalyticsIPRule](/img/in-post/google_analytics_IPRule.png)
     2. Create IP filter in 'Admin' - 'Data Settings' - 'Data Filters' - 'Create Filter' - 'Internal Traffic' - set 'Testing' Filter state - 'Create'.
