@@ -9,6 +9,7 @@ tags:
 - wiki
 - work
 - IDE
+- 中文
 ---
 
 调整调整IntelliJ IDEA菜单栏及编辑器字体大小

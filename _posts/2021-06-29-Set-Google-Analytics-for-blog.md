@@ -9,6 +9,7 @@ tags:
 - blog
 - data
 - google
+- English
 ---
 
 ### What is Google Analytics?
@@ -53,7 +54,7 @@ For learning purpose I set both GA4 and GA3 for this blog.
 
 #### Set up GA4
 
-I first set up GA4 following the guide in this article([[GA4] Set up Analytics for a website and/or app](https://support.google.com/analytics/answer/9304153))
+I first set up GA4 following the guide in this article: [[GA4] Set up Analytics for a website and/or app](https://support.google.com/analytics/answer/9304153).
 
 On the website -- [https://marketingplatform.google.com/about/analytics/](https://marketingplatform.google.com/about/analytics/), click 'Start for free'.
 
@@ -75,9 +76,19 @@ On the website -- [https://marketingplatform.google.com/about/analytics/](https:
           gtag('config', "site.ga_measurement_id");
         </script>
         ```
-       Wrap ```site.ga_measurement_id``` with double curly bracket. 
+       （Wrap ```site.ga_measurement_id``` with double curly bracket.） 
     2. Add GA4 measurement ID in config YAML file.
       ```
       # Google Analytics GA4
       ga_measurement_id: 'G-XXXXXXXXXX'
       ```
+
+GA4 user interface:
+ ![GoogleAnalyticsUI](/img/in-post/google_analytics_UI.png)
+
+#### Set up Universal Analytics (GA3)
+After setting up GA4, I set up Universal Analytics and its views with filters following these tutorial: [Google Analytics for Beginners: 1.3 Google Analytics setup](https://analytics.google.com/analytics/academy/course/6/unit/1/lesson/3), [Google Analytics for Beginners: 1.4 How to set up views with filters](https://analytics.google.com/analytics/academy/course/6/unit/1/lesson/4).
+
+GA3 user interface:
+ ![GoogleAnalyticsGA3UI](/img/in-post/google_analytics_GA3UI.png)
+

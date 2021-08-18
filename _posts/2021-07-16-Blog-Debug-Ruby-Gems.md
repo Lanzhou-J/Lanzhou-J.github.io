@@ -9,6 +9,7 @@ tags:
 - blog
 - debug
 - ruby
+- 中文
 ---
 
 之所以想到标题的问题是因为……
