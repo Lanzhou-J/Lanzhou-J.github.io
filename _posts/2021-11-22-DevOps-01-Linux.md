@@ -256,8 +256,13 @@ Linux Principles
 
 ## 4.7 Network command
 
+---
 
+Useful Resources:
 
+[Linux for Hackers // EP 1 (FREE Linux course for beginners)](https://www.youtube.com/watch?v=VbEx7B_PTOE&t=15s)
+
+[Linux for Hackers // EP 2 (the Linux File System)](https://www.youtube.com/watch?v=A3G-3hp88mo&t=6s)
 
 
 
