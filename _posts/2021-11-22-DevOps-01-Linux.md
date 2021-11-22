@@ -246,6 +246,15 @@ Linux Principles
 - passwd
 - umask: the user file — creation mask, set default file permission
 
+## 4.3 File search command
+
+## 4.4 Help command
+
+## 4.5 User management command
+
+## 4.6 Zip/Unzip command
+
+## 4.7 Network command
 
 
 
