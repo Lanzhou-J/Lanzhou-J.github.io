@@ -321,6 +321,10 @@ Useful Resources:
 
 [Linux for Hackers // EP 2 (the Linux File System)](https://www.youtube.com/watch?v=A3G-3hp88mo&t=6s)
 
+中文教程：
+
+[史上最牛的Linux视频教程—兄弟连](https://www.bilibili.com/video/BV1mW411i7Qf?share_source=copy_web)
+
 
 
 
