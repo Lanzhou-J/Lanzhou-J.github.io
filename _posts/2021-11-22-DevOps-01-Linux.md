@@ -247,6 +247,63 @@ Linux Principles
 - umask: the user file — creation mask, set default file permission
 
 ## 4.3 File search command
+### 4.3.1 File search command find
+- Better not use `find`, arrange your files wisely instead because `find` may consume lots of resource
+- the search range: better be small & accurate
+- name: `find`
+- path: `/bin/find`
+- permission: all users
+- use: `find [range] [conditions]`
+- function: search files
+- search methods:
+  - file name:
+    - `find /etc -name init`
+    - `find /etc -name *init*`
+    - `find /etc -name init???`
+    - `-iname` not case sensitive
+  - file size:
+    - `find / -size +204800` search for files larger than 100MB under root dir
+    - `find / -size +100M`
+  - owner or group:
+    - `find /home -user lz`
+    - `find /home -group dev`
+  - time:
+    - `find /etc -cmin -5` find files or directories that the meta data was modified within 5 min under etc dir
+    - `-amin` access time
+    - `-cmin` meta data modification time
+    - `-mmin` file content modification time
+- special flags:
+  - `-a` both confitions are true
+  - `-o` or, either one
+
+### 4.3.2 Other search command
+- locate:
+  - path: /usr/bin/locate
+  - function: search file by their filename
+  - e.g. `locate inittab`
+  - if can't find, try `updatedb`
+  - `locate -i teacher.txt` not case sensitive
+
+- which:
+  - path: /usr/bin/which
+  - function: search command directory and alias
+  - e.g. `which ls`
+
+- whereis:
+  - path: /usr/bin/whereis
+  - function: search command directory and mannual path
+  - e.g. `whereis ls`
+
+- grep:
+  - path: bin/whereis
+  - use: `grep -iv [str] [file]`
+  - function: search line that contains string in a file
+    - `-i` not case sensitive
+    - `-v` eliminate string
+  - e.g. `grep mysql /root/install.log`
+  - `more /etc/inittab`
+  - `grep multi /etc/inittab`
+  - `grep -v ^# /etc/inittab` will eliminate all the lines that start with #
 
 ## 4.4 Help command
 
