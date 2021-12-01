@@ -306,9 +306,46 @@ Linux Principles
   - `grep -v ^# /etc/inittab` will eliminate all the lines that start with #
 
 ## 4.4 Help command
+- man:
+  - use: `man [command or config files]`
+  - function: get help info
+  - e.g. `man ls`
+  - e.g. `man services` equal to more /etc/services
+  - reading mode is similar to `more`, f, b, up, down, q (space to change page, Enter to continue reading line by line)
+
+- whatis:
+  - `whatis ls`
+  - `whatis ifconfig`
+  - function: get short command introduction
+
+- apropos:
+  - `apropos services`
+  - `apropos inittab`
+  - function: can read intro of config files
+
+- help:
+  - function: can check Shell language grammar & get Shell commands
+  - e.g. `help if`
+
+- help option: `--help`
+  - use this after commands if you don't want to read intro but want to know more about options 
 
 ## 4.5 User management command
+- useradd:
+  - function: add new users
+  - e.g.`useradd lz`
+  - permission: root
 
+- passwd:
+  - function: set password
+  - e.g. `passwd lz`
+
+- who:
+  - function: check how many users are logging in
+
+- w:
+  - function: check detailed info of log-in users
+  
 ## 4.6 Zip/Unzip command
 
 ## 4.7 Network command
