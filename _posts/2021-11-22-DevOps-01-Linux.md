@@ -347,6 +347,55 @@ Linux Principles
   - function: check detailed info of log-in users
   
 ## 4.6 Zip/Unzip command
+- gzip:
+  - function: zip files
+  - file format after `gzip`: .gz
+  - `gzip` can only compress file, not directories.
+  - after `gzip` the original file is not there any more.
+
+- gunzip:
+  - function: unzip .gz files
+  - e.g. `gunzip homework.gz`
+  - or we can use `gzip -d`
+
+- tar
+  - use: `tar option[-zcf] [filename] [directory]`
+    - `-c` pack
+    - `-v` show info
+    - `-f` use filename
+    - `-z` pack and zip
+  - function: pack directories
+  - file format after zip: .tar.gz
+
+  - tar (unpack & unzip)
+    - tar command options:
+      - `-x` unpack
+      - `-v` show info
+      - `-f` filename
+      - `-z` unzip
+    - e.g. `tar -zxvf homework.tar.gz`
+
+- zip
+  - use: `zip option[-r] [filename] [file or directory]`
+    - `-r` zip directory
+    - e.g. `zip -r homework.zip Homework`
+  - function: zip file or directory
+  - original file will be kept
+
+- unzip
+  - use: `unzip [file]`
+  - function: unzip .zip file
+  - e.g. `unzip test.zip` 
+
+- bzip2
+  - use: `bzip2 option[-k] [file]`
+    - `-k` create compressed file and keep the original file
+  - function: compress file
+  - file format after `bzip2`: .bz2
+  - e.g. `bzip2 -k Homework`
+  - e.g. `tar -cjf Homework.tar.bz2 Homework`
+    - tar -j is to create bz2 format
+  - the compression ratio is high
 
 ## 4.7 Network command
 
