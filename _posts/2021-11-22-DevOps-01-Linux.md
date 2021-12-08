@@ -398,6 +398,24 @@ Linux Principles
   - the compression ratio is high
 
 ## 4.7 Network command
+- ping
+  - use: `ping [option] [IP address]`
+    - `-c` set how many times you send packets
+  - function: test network connectivity
+  - e.g. `ping 192.168.1.156`
+  - e.g. `ping -c 3 8.8.8.8`
+  - (add image)
+
+- ifconfig
+  - network interface configure
+  - use：`ifconfig [interface name] [IP address]`
+  - function: view and set network interface info
+  - e.g. `ifconfig eth0 192.168.8.250`
+- mail
+- last
+- lastlog
+- traceroute
+- netstat
 
 ---
 
