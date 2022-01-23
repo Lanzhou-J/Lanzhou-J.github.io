@@ -10,7 +10,7 @@ tags:
 - English
 - wiki
 ---
-**Research summary**
+**Research summary:**
 
 - VPCs
 - Routing Table

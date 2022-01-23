@@ -71,7 +71,7 @@ ga_tracking_id: 'UA-192642756-1'
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "墨尔本敲代码的小学徒"
+sidebar-about-description: "Software developer with a passion for DevOps, mentoring & blogging"
 sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
