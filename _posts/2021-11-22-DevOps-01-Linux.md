@@ -411,11 +411,41 @@ Linux Principles
   - use：`ifconfig [interface name] [IP address]`
   - function: view and set network interface info
   - e.g. `ifconfig eth0 192.168.8.250`
+
 - mail
+  - use: `mail [username]`
+  - function: read and send mails
+  - e.g. `mail root` -> ctrl+D save
+
 - last
+  - use: `last`
+  - function: list all the user info (users who logged in the system before)
+
 - lastlog
+  - use: `lastlog`
+  - function: list username and user's last login time
+  - e.g. `lastlog`
+  - e.g. `lastlog -u 502` (num represents user Uid)
+  - search for user uid: `id <username>`
+
 - traceroute
+  - use: `traceroute <url>`
+  - function: Trace the route to HOST
+  - e.g. `traceroute www.google.com`
+
 - netstat
+  - use: `netstat [options]`
+  - function: show network related info
+  - options:
+    - -t: TCP protocol
+    - -u: UDP protocol
+    - -l: listen
+    - -r: router
+    - -n: show IP address and port number
+  - e.g. 
+    - `netstat -tlun` display local machine listening ports
+    - `netstat -an` display all the network connections of the local machine
+    - `netstat -rn` display routing table of the local machine
 
 ---
 
