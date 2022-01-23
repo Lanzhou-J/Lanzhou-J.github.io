@@ -41,9 +41,10 @@ Flowchart:
 
 ![flowchart](/img/in-post/Minesweeper-Flowchart3.png)
 
-This is the flowchart of the program I designed, similarly, it can be divided into two stages, the first stage: generating a board that can be used by the game; the second stage, the process of playing the game and  determine win or lose. How was this board created? First, an empty board is generated according to the user input, and then MinesGenerator will randomly place mines on the board, and then the HintsGenerator will loop through all the mine squares and then change the Hint value of the surrounding squares according to the position of Mines, and finally show the user the game board in hidden mode. 
 
-Next, A while loop is used here in the second stage whey user starts to play the game, this condition: "Board is not entirely revealed" is evaluated before processing the body of the loop. When the condition is true, the body will be executed. game collects user input of Location value, then update board by revealing the corresponding square, then WinLoseChecker will check the current Board. If the current state of the Board matches the losing condition, then we lose the game, then reveal the entire board, display board , end of loop; Similarly if current Board matches winning condition, we win the game, reveal the entire board, display board, end of loop. If neither condition is true, then loop continues.
+This is the flowchart of the program I designed, similarly, it can be divided into two stages, the first stage: generating a board that can be used by the game; the second stage, the process of playing the game and determine win or lose. How was this board created? First, an empty board is generated according to the user input, and then MinesGenerator will randomly place mines on the board, and then the HintsGenerator will loop through all the mine squares and then change the Hint value of the surrounding squares according to the position of Mines, and finally show the user the game board in hidden mode. 
+
+Next, A while loop is used here in the second stage whey user starts to play the game, this condition: "Board is not entirely revealed" is evaluated before processing the body of the loop. When the condition is true, the body will be executed. game collects user input of Location value, then update board by revealing the corresponding square, then WinLoseChecker will check the current Board. If the current state of the Board matches the losing condition, then we lose the game, then reveal the entire board, display board , end of loop; Similarly if current Board matches winning condition, we win the game, reveal the entire board, display board, end of loop. If neither condition is true, then loop continues.
 
 Before we dive into code detail, I would like to show you the big picture of my design.
 
@@ -52,8 +53,16 @@ Class Diagram:
 
 This picture looks a bit complicated at first glance, so I also divided it into different parts. The first part is the core system of the program, and the second part on the edge is responsible for IO - input and output . The core system is mainly composed of four classes, namely Location, Square, Board and Game, which is the overarching orchestrator. These other classes are my helper classes, they provide services for the program. 
 
+- The 1st part:
+![class-diagram-part1](/img/in-post/Minesweeper-partA.png)
+
+
+- The 2nd part:
+![class-diagram-part2](/img/in-post/Minesweeper-partB.png)
+
 In the process of development, I strictly follow the TDD development cycle, Write a failing test ( the test bar is red), Write production code to make the test pass (then the test bar turn green), Refactor, Repeat. The programming strategy I choose is Bottom-Up approach, I started with details and worked my way up to a complete system. The reason I chose this strategy is that when I started programming, I didn’t know how to solve this problem, I don't know anything about the core business logic, but I know what the game would look like? From the user's point of view, this game will have a board composed of squares. This is why the first test I wrote at the very beginning was about how to create a board. Then how to create a square. I start from the entities.
 After having square, board and location, the logic in the game class or the logic in MineGenerator, HintGenerator seems to be generated naturally. If you ask me which is the most important category in this system, then I think it is Square, because this category is the smallest unit in the system, it is like the foundation of a building, it is the beginning of the whole story, 
+
 ---
 Now let's have a look at my code.
 then we Now focus on the Square class. Square has IsRevealed property to represent hidden or revealed, and IsMine boolean to represent if it is a safe square or a mine square. It has a Location, and a hint value. Why should I extract this Location class?
@@ -65,3 +74,7 @@ then we Now focus on the Square class. Square has IsRevealed property to represe
 Program.cs is the entry point of my program, in order to construct a game, I need Input, Output, MinesGenerator. You may ask, why do you use interface here? My main purpose is for testing, random mines are hard to test because you don’t know their specific location, but I can use test double, a mockMineGenerator instead of RandomMineGenerator, so that I can accurately predict the location of Mines and create test cases to distinguish losing and winning conditions. Input and Output use interface for similar reasons. One for testing, I can use test double like MockInput instead of ConsoleInput for my user acceptance test, it also makes my program more flexible. For example, it allows me to easily use an IO system that is not a console in the future.
 
 Now we have seen what the entry point looks like, it will lead you to Game class. CreateBoard function and Play function. I remember my mentors mentioned that Clean code should look like a newspaper, You read most important information first in function names just like a title, then detail of code implementation. And I have tried my best to improve code readability. Let's take CreateBoard as an example. it set up the board, initialise game. It starts by CreateEmptyBoard based on size, then ... Then if you are interested to know more about how mines are generated or how hints are generated, you can continue reading the code in MineGenerator or HintGenerator.
+
+Project Github repo:
+
+[Minesweeper](https://github.com/Lanzhou-J/Minesweeper)
