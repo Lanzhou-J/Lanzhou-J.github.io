@@ -16,7 +16,7 @@ tags:
 ### 1.1.1 UNIX development history
 - UNIX is like the father, Linux is like the son. They share a lot of similarities (dir structure, commands and management)
 - Multics(1960s) → UNIX(1969) → UNIX in C(1973) → BSD(1977) → *GNU project* → Minix(1987) → Linux(1991)
-(OS history graph)
+![OS history](/img/in-post/OS-history.png)
 - Linux: Unix-like systems
 
 ### 1.1.2 Linux history and different versions
@@ -53,11 +53,10 @@ tags:
 - LAMP: Linux, Apache, MySQL, PHP
 
 ## 1.3 Linux application
-(Linux structure graph)
+![Linux structure](/img/in-post/Linux-application.png)
 1. Enterprise server
   - www.netcraft.com
   - A lot of websites server OS is Linux
-  (Market share for top servers graph)
 2. Embedded Computer
   - Mobile, tablet PC, Android - Linux
   - Smart Home appliances
@@ -95,7 +94,7 @@ Linux Principles
 
 ---
 # 3 Linux dir structure
-(dir structure graph)
+![Linux structure](/img/in-post/Linux-structure.png)
 - / → The top-level directory is the root filesystem
     - Contains all of the files required to boot the operating system before other filesystems are mounted
     - as well as the files required to boot the other filesystems.
@@ -404,7 +403,7 @@ Linux Principles
   - function: test network connectivity
   - e.g. `ping 192.168.1.156`
   - e.g. `ping -c 3 8.8.8.8`
-  - (add image)
+  - ![ping example](/img/in-post/ping.png)
 
 - ifconfig
   - network interface configure
