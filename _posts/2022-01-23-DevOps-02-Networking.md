@@ -20,6 +20,22 @@ tags:
 # 1 IPs & CIDR notation
 ## 1.1 IPs
 
+### What is an IP address?
+  - Data packets are equivalent to express packages
+  - IP address is equivalent to home address and street number
+  - Each device connected to the internet has a unique "ID" -- an IP address. IP addresses allow devices to communicate with each other.
+
+### What is a public IP address?
+  - Fixed public IP -> enterprise broadband, cloud server
+
+### What is a private IP address?
+
+### Differences between private and public IP addresses
+
+### IPv4
+
+### IPv6
+
 
 ## 1.2 CIDR notation
 
