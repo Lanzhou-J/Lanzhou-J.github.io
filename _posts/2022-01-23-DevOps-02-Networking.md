@@ -26,9 +26,10 @@ tags:
   - Each device connected to the internet has a unique "ID" -- an IP address. IP addresses allow devices to communicate with each other.
 
 ### What is a public IP address?
-  - Fixed public IP -> enterprise broadband, cloud server
+  - public IP address (external IP address): IP address that can be accessed directly over the internet, assigned to your network router by ISP(internet service provider)
 
 ### What is a private IP address?
+  - private IP address (local/internal IP address): The address your network router assigns to your device. Each device within the same network is assigned a unique private IP address.
 
 ### Differences between private and public IP addresses
 
