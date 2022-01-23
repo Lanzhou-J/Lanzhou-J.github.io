@@ -10,7 +10,8 @@ tags:
 - English
 - wiki
 ---
-Research summary:
+**Research summary:**
+
 - Linux introduction
 - Dir structure
 - Basics commands
