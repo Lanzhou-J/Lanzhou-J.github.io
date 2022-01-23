@@ -10,6 +10,12 @@ tags:
 - English
 - wiki
 ---
+Research summary:
+- Linux introduction
+- Dir structure
+- Basics commands
+- Permissions
+
 # 1 Linux introduction
 
 ## 1.1 History of Unix & Linux
