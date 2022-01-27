@@ -21,8 +21,8 @@ tags:
 ## 1.1 IPs
 
 ### What is an IP address?
-  - Data packets are equivalent to express packages
-  - IP address is equivalent to home address and street number
+  - Data packets are similar to packages
+  - IP address is similar to home address or street number
   - Each device connected to the internet has a unique "ID" -- an IP address. IP addresses allow devices to communicate with each other.
 
 ### What is a public IP address?
@@ -65,6 +65,10 @@ tags:
 
 ## 3.1 HTTP basic concepts
 
+### What is HTTP?
+
+HTTP is Hyper Text Transfer Protocol
+
 ## 3.2 GET and POST
 
 ## 3.3 HTTP characteristics
@@ -90,6 +94,8 @@ APSTNDP -> "Australia Post Still They Never Deliver Package"
 
 Useful Resources:
 
-[IPv4, CIDR and VPC Subnets Made Simple](https://www.youtube.com/watch?v=z07HTSzzp3o&t=74s)
+[[Video] IPv4, CIDR and VPC Subnets Made Simple](https://www.youtube.com/watch?v=z07HTSzzp3o&t=74s)
+
+[Public vs. Private IP Addresses: What’s the Difference?](https://www.avast.com/c-ip-address-public-vs-private#gref)
 
 [DNS explained](https://www.better.dev/dns-explained-how-your-browser-finds-websites)
