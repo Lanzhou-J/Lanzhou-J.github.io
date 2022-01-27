@@ -10,6 +10,7 @@ tags:
 - English
 - wiki
 ---
+
 **Research summary:**
 
 - IPs and CIDR notation
@@ -32,6 +33,17 @@ tags:
   - private IP address (local/internal IP address): The address your network router assigns to your device. Each device within the same network is assigned a unique private IP address.
 
 ### Differences between private and public IP addresses
+
+
+
+| Public IP address | Private IP address |
+| -------- | -------- | 
+| External (global) reach     | Internal (local) reach     |
+| Used for communicating outside the private network     | Used for communicating within the private network     |
+| A unique ID that is not reused    | A non-unique ID that might be reused in other private networks     |
+| Not free     | Free     |
+| IP range: Any number not included in the reserved private IP address range (e.g. 8.8.8.8)     |  IP range: see special IP address ranges (e.g. 10.11.12.13)    |
+
 
 ### IPv4
 
