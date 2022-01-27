@@ -26,6 +26,20 @@ tags:
   - IP address is similar to home address or street number
   - Each device connected to the internet has a unique "ID" -- an IP address. IP addresses allow devices to communicate with each other.
 
+
+#### IPv4
+
+- Special IP addresses:
+  - local machine IP: 127.0.0.1
+  - Private Address Ranges:
+    - Class A: 10.0.0/8 (10.0.0.0 - 10.255.255.255)
+    - Class B: 172.16.0.0/12 (172.16.0.0 - 172.31.255.255)
+    - Class C: 192.168.0.0/16 (192.168.0.0 - 192.168.255.255)
+
+#### IPv6
+
+
+
 ### What is a public IP address?
   - public IP address (external IP address): IP address that can be accessed directly over the internet, assigned to your network router by ISP(internet service provider)
 
@@ -45,16 +59,7 @@ tags:
 | IP range: Any number not included in the reserved private IP address range (e.g. 8.8.8.8)     |  IP range: see special IP address ranges (e.g. 10.11.12.13)    |
 
 
-### IPv4
 
-- Special IP addresses:
-  - local machine IP: 127.0.0.1
-  - Special IP Address Ranges:
-    - 10.0.0/8 (10.0.0.0 - 10.255.255.255)
-    - 172.16.0.0/12 (172.16.0.0 - 172.31.255.255)
-    - 192.168.0.0/16 (192.168.0.0 - 192.168.255.255)
-
-### IPv6
 
 
 ## 1.2 CIDR notation
