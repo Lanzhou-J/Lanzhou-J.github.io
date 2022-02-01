@@ -29,15 +29,53 @@ tags:
 
 #### IPv4
 
-- Special IP addresses:
+IPv4(Internet Protocol version 4) address is represented by 32 digit positive integers, IP address is processed in binaries by computers.
+
+IPv4 addresses are most often written in dotted decimal notation, which is easier for humans to read and remember. Each 8-bit byte in the 32-bit IPv4 address is converted from binary format to a decimal number between 0 and 255. The numbers are written as 4 decimal numbers with dots between them (e.g. W.X.Y.Z)
+
+![IPV4 address](/img/in-post/IPv4.png)
+
+- dotted decimal notation: `Octet#1.Octet#2.Octet#3.Octet#4`
+
+So, the max number of IP address is 2^32 = 4294967296. (i.e., around 4.3 billion computers can be connected to the internet) In fact, one host computer, or one router can occupy 1, 2 or more IP addresses, so computers that can actually connect to the internet would be less than 4.3 billion.
+
+Nowadays, not only computers, mobile phones, iPad would need IP addresses too, so we would expect the IP addresses needed are more than 4.3 billion. How to solve this problem? Network Address Translation (NAT) is used to limit the number of public IP addresses an organization or company must use, for both economy and security purposes. With NAT technology, more than 4.3 billion computers/devices can be connected to the internet.
+
+##### Special IP addresses:
   - local machine IP: 127.0.0.1
   - Private Address Ranges:
     - Class A: 10.0.0/8 (10.0.0.0 - 10.255.255.255)
     - Class B: 172.16.0.0/12 (172.16.0.0 - 172.31.255.255)
     - Class C: 192.168.0.0/16 (192.168.0.0 - 192.168.255.255)
 
+##### Classful Networking (1981-1993)
+![classful-networking](/img/in-post/classful-networking.png)
+A classful network is used from 1981 until the introduction of CIDR(Classless Inter-Domain Routing) in 1993. The method divides IP addresses range into 5 classes based on the leading 4 digits bits. (Class A, B, C, D and E)
+
+| Class | IP address range | Max number of hosts |
+| -------- | -------- | -------- |
+| A     | 0.0.0.0 ~ 127.255.255.255 | 16777214 |
+| B     | 128.0.0.0 ~ 191.255.255.255 | 65534 |
+| C     | 192.0.0.0 ~ 223.255.255.255 | 254 |
+
+The number of addresses usable for addressing specific hosts in each network is always 2N - 2, where N is the number of rest field bits, and the subtraction of 2 adjusts for the use of the all-bits-zero host value to represent the network address and the all-bits-one host value for use as a broadcast address. 
+- Classful Networking drawbacks:
+    
+    1. No address layers within the same network, lacking address flexibility.
+
+    2. Class A, B and C are hard to use in real-life:
+      
+    - Class C max number of hosts is too small, only 254.
+    - Class B max number of hosts is too large, very wasterful because usually companies would not be able to use all 60 thousand addresses.
+
+    How to solve the problems? See `CIDR`.
+
+
 #### IPv6
 
+IPv6(Internet Protocol version 6) was introduced in late 1990s as a replacement for IPv4. It uses 128-bit addresses formatted as 8 groups of 4 hexadecimal numbers separated by colons (e.g. fe80::250:56ff:fe86:1610). This largely increases the number of IP addresses we can use (3.4*10^38). There is a saying "It is large enough for every grain of sand on earth to be IP addressable." And this also means that every device on the internet can have a unique IPv6 address.
+
+Compared with IPv4, IPv6 is better in security and extensibility. IPv6 is designed for end-to-end encryption, which will make man-in-the-middle attacks more difficult.
 
 
 ### What is a public IP address?
@@ -59,16 +97,40 @@ tags:
 | IP range: Any number not included in the reserved private IP address range (e.g. 8.8.8.8)     |  IP range: see special IP address ranges (e.g. 10.11.12.13)    |
 
 
+- Public & private IP address example:
+![NAT](/img/in-post/NAT.png)
 
+  - Public IP address -> apartment building number
+  - Private IP address -> home address
 
 
 ## 1.2 CIDR notation
 
+Since the design of classful networking has limitations, so classless routing solution is proposed, also known as `CIDR`.
+
 ### What is CIDR notation?
 
 - CIDR: Classless Inter-Domain Routing
-  - Simplifies routing tables
-  - Reduces IPv4 exhaustion
+  -  CIDR notation specifies an IP address, a slash('/') character, and a decimal number.
+  - 32-bit IP address are separated into 2 parts: network prefix and host identifier.
+
+  How to separate network prefix and host identifier?
+  - For example, `a.b.c.d/x`, `/x` represents that the previous x digits are network prefix, and the range of x is `0~32`. This will make IP address more flexible.
+  - `10.100.122.2/24`: `/24` represents the first 24 digits are network prefix, and the rest 8 digits are host identifier.
+
+
+| CIDR | 10.100.122.2/24 |
+| -------- | -------- | 
+| Number of available addresses | 254 |
+| subnet mask | 255.255.255.0 |
+| network prefix | 10.100.122.0 |
+| the first available address | 10.100.122.1 |
+| the last available address | 10.100.122.254 |
+| broadcast address | 10.100.122.255 |
+
+- Benefits of CIDR:
+  - CIDR can be used to effectively manage the available IP address space.
+  - CIDR can reduce the number of routing table entries.
 
 # 2 DNS
 
