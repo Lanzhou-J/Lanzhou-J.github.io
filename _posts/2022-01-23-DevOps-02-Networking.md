@@ -161,7 +161,11 @@ We can edit DNS records, usually, on the domain registrar or our website host's 
 - DNS records have a “TTL” or time to live setting. This is simply an amount of time that the name servers will allow records to be cached by any of the computers who might store the information about that specific domain and hostname before that cached data must be discarded and reacquired.
 
 ## 2.3 Types of DNS Records
+- A Records: An A Record is the type of record that tells an incoming request where to find the website they are looking for.
 
+- CNAME Records: A CNAME record (Canonical Name Record) is a type of DNS record that maps an alias name to a true or canonical domain name. You provide another domain name as the value of this record, and the domain name lookup process will simply continue with the new domain name.
+
+- MX Records: MX records help mail requests to a domain find the correct mail transfer agents that are available for it.
 # 3 HTTP
 
 ## 3.1 HTTP basic concepts
