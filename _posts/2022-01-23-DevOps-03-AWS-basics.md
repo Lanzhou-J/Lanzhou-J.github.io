@@ -70,11 +70,11 @@ Best practice: Use custom route tables for each subnet.
 
 ### Subnets Allow Different Levels of Network Isolation
 
-Public subnets: 
+Public subnets:
 
 - Include a routing table entry to an internet gateway to support inbound/outbound access to the public internet.
 
-Private subnets: 
+Private subnets:
 
 - Do not have a routing table entry to an internet gateway.
 - Are not directly accessible from the public internet
@@ -106,7 +106,7 @@ NAT Gateways (network address translation (NAT) gateway)
 - Virtual firewalls that control inbound and outbound traffic into AWS resources
 - Traffic can be restricted by any IP protocol, port or IP address
 - Rules are stateful
-    - If allow in, allow out (Security groups are stateful—if you send a request from your instance, the response traffic for that request is allowed to flow in regardless of the inbound rules.)
+    - If allow in, allow out (Security groups are stateful—if you send a request from your instance, the response traffic for that request is allowed to flow in regardless of the inbound rules.)
     - meaning request information is tracked, and so responses won't need to be tracked as a new request. Ex: ICMP ping requests.
 - By default, block all inbound traffic but allow all outbound traffic
 
