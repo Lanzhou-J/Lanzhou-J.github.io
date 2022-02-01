@@ -191,11 +191,15 @@ In order to understand HTTP, we can separate it into 3 parts:
 2. Transfer
 - HTTP is a two-way protocol. (request & response)
 - data is transmitted between point A and B but transfer is allowed.
+- HTTP is an agreement/regulation for transmitting data between 2 points.
 
-## 3.2 GET and POST
+3. Hyptertext
+- Hypertext is text beyond normal text, it is a mixture of word, graph and videos, including links.
 
-## 3.3 HTTP characteristics
+- HTML is the most commonly used hypertext.
 
+
+In summary, HTTP is an agreement and regulation for transmitting data (hypertext, including text, graph, music, videos) between 2 points (server & browser or server & server).
 
 # 4 OSI
 
