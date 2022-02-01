@@ -58,13 +58,13 @@ A classful network is used from 1981 until the introduction of CIDR(Classless In
 | B     | 128.0.0.0 ~ 191.255.255.255 | 65534 |
 | C     | 192.0.0.0 ~ 223.255.255.255 | 254 |
 
-The number of addresses usable for addressing specific hosts in each network is always 2N - 2, where N is the number of rest field bits, and the subtraction of 2 adjusts for the use of the all-bits-zero host value to represent the network address and the all-bits-one host value for use as a broadcast address. 
+The number of addresses usable for addressing specific hosts in each network is always 2N - 2, where N is the number of rest field bits, and the subtraction of 2 adjusts for the use of the all-bits-zero host value to represent the network address and the all-bits-one host value for use as a broadcast address.
 - Classful Networking drawbacks:
-    
+
     1. No address layers within the same network, lacking address flexibility.
 
     2. Class A, B and C are hard to use in real-life:
-      
+
     - Class C max number of hosts is too small, only 254.
     - Class B max number of hosts is too large, very wasterful because usually companies would not be able to use all 60 thousand addresses.
 
@@ -89,7 +89,7 @@ Compared with IPv4, IPv6 is better in security and extensibility. IPv6 is design
 
 
 | Public IP address | Private IP address |
-| -------- | -------- | 
+| -------- | -------- |
 | External (global) reach     | Internal (local) reach     |
 | Used for communicating outside the private network     | Used for communicating within the private network     |
 | A unique ID that is not reused    | A non-unique ID that might be reused in other private networks     |
@@ -120,7 +120,7 @@ Since the design of classful networking has limitations, so classless routing so
 
 
 | CIDR | 10.100.122.2/24 |
-| -------- | -------- | 
+| -------- | -------- |
 | Number of available addresses | 254 |
 | subnet mask | 255.255.255.0 |
 | network prefix | 10.100.122.0 |
@@ -134,9 +134,31 @@ Since the design of classful networking has limitations, so classless routing so
 
 # 2 DNS
 
+When we browse websites on the internet, normally we use domain names instead of IP addresses because domain names are easier to remember.
+
+DNS(Domain name system) can achieve this, DNS can help "translate" domain names to specific IP addresses.
+
 ## 2.1 How DNS works?
 
+- We type in a domain name (`www.example.com`) into our browser.
+- The browser checks its cache and the computer's cache for the DNS records for that match the domain name we entered. If it succeeds, it requests the page from the website's host.
+- If we haven’t found our record yet, our request goes to our Recursive DNS Servers that we have set for our computer or network (probably our ISP). If they have the record cached, we take the results from them and try to load the page (and we also cache it locally for later use).
+- If we still haven’t found it, we go to the Root DNS Servers, and ask them where to find the correct Top Level DNS Servers for the `.com` TLD.
+- We arrive at the `.com` Top Level DNS Servers, who have one nugget of information for us - they are kept up to date on which Authoritative Name Servers are responsible for `example.com` and they share that information with us.
+- Then, we head over to the Authoritative Name Servers, who give us the record we’re looking for.
+- Finally, the result is cached by the recursive DNS servers, and by our local system - and we load our page!
+
+
+
 ## 2.2 How to set up DNS records
+
+DNS records are a set of information, primarily IP addresses. These records indicate various things about the domain, e.g. where to go when we type in the domain name `example.com` or `www.example.com`, where to go when other subdomains like `employees.example.com` are used, and how to handle email for the domain etc.
+
+We can edit DNS records, usually, on the domain registrar or our website host's control panels. The records themselves live on the above mentioned "Authoritative Name Servers", and are primarily made up of locations (IP addresses and domain names) and time to live numbers.
+
+**TTL(Time to live)**
+
+- DNS records have a “TTL” or time to live setting. This is simply an amount of time that the name servers will allow records to be cached by any of the computers who might store the information about that specific domain and hostname before that cached data must be discarded and reacquired.
 
 ## 2.3 Types of DNS Records
 
