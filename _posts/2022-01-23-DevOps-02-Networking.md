@@ -166,6 +166,8 @@ We can edit DNS records, usually, on the domain registrar or our website host's 
 - CNAME Records: A CNAME record (Canonical Name Record) is a type of DNS record that maps an alias name to a true or canonical domain name. You provide another domain name as the value of this record, and the domain name lookup process will simply continue with the new domain name.
 
 - MX Records: MX records help mail requests to a domain find the correct mail transfer agents that are available for it.
+
+
 # 3 HTTP
 
 ## 3.1 HTTP basic concepts
