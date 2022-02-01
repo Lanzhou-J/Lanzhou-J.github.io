@@ -219,6 +219,13 @@ In summary, HTTP is an agreement and regulation for transmitting data (hypertext
 
 APSTNDP -> "Australia Post Still They Never Deliver Package"
 
+
+### Summary
+
+- what happens when you go to example.com?
+
+
+
 Useful Resources:
 
 [[Video] IPv4, CIDR and VPC Subnets Made Simple](https://www.youtube.com/watch?v=z07HTSzzp3o&t=74s)
