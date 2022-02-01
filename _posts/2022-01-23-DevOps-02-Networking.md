@@ -226,7 +226,7 @@ APSTNDP -> "Australia Post Still They Never Deliver Package"
 
 - What happens when you go to example.com?
 
-
+![summary](/img/in-post/networking-summary.png)
 
 Useful Resources:
 
