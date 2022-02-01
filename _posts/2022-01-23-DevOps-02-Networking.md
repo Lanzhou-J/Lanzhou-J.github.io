@@ -174,6 +174,24 @@ We can edit DNS records, usually, on the domain registrar or our website host's 
 
 HTTP is Hyper Text Transfer Protocol
 
+In order to understand HTTP, we can separate it into 3 parts:
+
+- HyperText
+- Transfer
+- Protocol
+
+
+1. Protocol:
+
+- 2 or more participants
+- agreement & regulation on behaviors
+
+  We can see HTTP protocols as a protocol used in the computer world, it uses language that computers can understand to set up a regulation for communication between computers (2 or more participants), including related error handling methods (agreement & regulation on behaviors)
+
+2. Transfer
+- HTTP is a two-way protocol. (request & response)
+- data is transmitted between point A and B but transfer is allowed.
+
 ## 3.2 GET and POST
 
 ## 3.3 HTTP characteristics
