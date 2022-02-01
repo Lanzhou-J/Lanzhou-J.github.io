@@ -222,7 +222,7 @@ APSTNDP -> "Australia Post Still They Never Deliver Package"
 
 ### Summary
 
-- what happens when you go to example.com?
+- What happens when you go to example.com?
 
 
 
