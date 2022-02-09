@@ -6,7 +6,8 @@ date: '2022-1-23 22:39:00'
 author: Lanzhou
 header-img: img/post-bg-unix-linux.jpg
 tags:
-- study
+- debug
+- 中文
 ---
 
 ## 问题描述：
