@@ -159,3 +159,6 @@ EXPOSE 5000
 
 然后就可以访问Docker container中的ASP.Net app啦：
 http://localhost:8080/swagger/index.html
+
+参考资料：
+https://stackoverflow.com/questions/48669548/why-does-aspnet-core-start-on-port-80-from-within-docker
