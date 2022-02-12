@@ -185,10 +185,10 @@ In order to understand HTTP, we can separate it into 3 parts:
 
 1. Protocol:
 
-- 2 or more participants
-- agreement & regulation on behaviors
+  - 2 or more participants
+  - agreement & regulation on behaviors
 
-  We can see HTTP protocols as a protocol used in the computer world, it uses language that computers can understand to set up a regulation for communication between computers (2 or more participants), including related error handling methods (agreement & regulation on behaviors)
+    We can see HTTP protocols as a protocol used in the computer world, it uses language that computers can understand to set up a regulation for communication between computers (2 or more participants), including related error handling methods (agreement & regulation on behaviors)
 
 2. Transfer
 - HTTP is a two-way protocol. (request & response)
