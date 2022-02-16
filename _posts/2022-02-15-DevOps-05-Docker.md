@@ -116,7 +116,7 @@ The reason why Docker is so powerful, so popular is that multiple isolated docke
 - Macvlan:
     - container pretend to be an physical computer with real MAC address
 
-6. Dockerfile
+### 6. Dockerfile
 
 A Dockerfile is a text file used to build an image. The text contains all the instructions needed to build an image.
 
