@@ -9,6 +9,7 @@ tags:
 - study
 - English
 - wiki
+- devops
 ---
 **Research summary:**
 
