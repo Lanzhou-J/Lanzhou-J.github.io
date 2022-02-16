@@ -119,3 +119,5 @@ The reason why Docker is so powerful, so popular is that multiple isolated docke
 Useful Resources:
 
 - [DevOps-Girls/docker-101](https://github.com/DevOps-Girls/docker-101)
+- [Visualizing Docker Containers and Images](http://merrigrove.blogspot.com/2015/10/visualizing-docker-containers-and-images.html)
+- [[Video] Creating Effective Images](https://www.youtube.com/watch?v=pPsREQbf3PA)
