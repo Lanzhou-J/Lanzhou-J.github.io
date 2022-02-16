@@ -81,7 +81,7 @@ What is volume:
     - How to use configMap
         - ConfigMap provides a way to inject configuration data into pods. The data stored in a ConfigMap can be referenced in a volume of type configMap and then consumed by containerized apps running in your pod.
         - Mounted ConfigMaps are updated automatically.
-        - **A container using a ConfigMap as a `[subPath](https://kubernetes.io/docs/concepts/storage/volumes/#using-subpath)` volume mount will not receive ConfigMap updates.?**
+        - **A container using a ConfigMap as a [subPath](https://kubernetes.io/docs/concepts/storage/volumes/#using-subpath) volume mount will not receive ConfigMap updates.?**
     
 - **Secret**
     - Secrets are a first-class citizen in Kubernetes. They are mounted as data volumes or environment variables and are specific to a particular namespace, ensuring that the scope isn’t across all applications.
