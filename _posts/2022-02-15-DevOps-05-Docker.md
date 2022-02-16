@@ -116,8 +116,26 @@ The reason why Docker is so powerful, so popular is that multiple isolated docke
 - Macvlan:
     - container pretend to be an physical computer with real MAC address
 
+6. Dockerfile
+
+A Dockerfile is a text file used to build an image. The text contains all the instructions needed to build an image.
+
+Docker automatically generates images by reading the instructions in the Dockerfile.
+
+Dockerfile can be used to invoke any command on the command line.
+
+When creating Docker containers, we should try our best to create "smaller" images, because it would be faster to transfer and deploy relatively small images. According to docker docs, the image defined by Dockerfile should generate containers that are "as ephemeral as possible". That means the contaienr can be stopped and destroyed, then rebuilt and replaced with minimum set up and configuration. 
+
+Some useful Dockerfile skills:
+- First step: Choose the right base (smaller)
+- reduce the number of layers
+  - Use shared base images where possible
+  - Limit the data written to the container layer
+  - Chain RUN statements
+
 Useful Resources:
 
 - [DevOps-Girls/docker-101](https://github.com/DevOps-Girls/docker-101)
 - [Visualizing Docker Containers and Images](http://merrigrove.blogspot.com/2015/10/visualizing-docker-containers-and-images.html)
 - [[Video] Creating Effective Images](https://www.youtube.com/watch?v=pPsREQbf3PA)
+- [docker docs - Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
