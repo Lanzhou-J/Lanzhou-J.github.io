@@ -1,5 +1,5 @@
 ---
-title: DevOps learning journey 05 - Docker
+title: DevOps 05 - Docker
 layout: post
 subtitle: null
 date: '2022-02-15 15:20:00'

@@ -1,5 +1,5 @@
 ---
-title: DevOps learning journey 01 - Linux
+title: DevOps 01 - Linux
 layout: post
 subtitle: null
 date: '2021-11-22 22:40:00'

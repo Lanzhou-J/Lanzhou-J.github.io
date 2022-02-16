@@ -1,5 +1,5 @@
 ---
-title: DevOps learning journey 02 - Networking
+title: DevOps 02 - Networking
 layout: post
 subtitle: null
 date: '2022-1-23 12:30:00'

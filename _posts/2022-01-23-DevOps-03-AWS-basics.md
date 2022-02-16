@@ -1,5 +1,5 @@
 ---
-title: DevOps learning journey 03 - AWS basics
+title: DevOps 03 - AWS basics
 layout: post
 subtitle: null
 date: '2022-1-23 22:39:00'
