@@ -9,6 +9,7 @@ tags:
 - study
 - English
 - wiki
+- devops
 ---
 **Research summary:**
 
@@ -21,7 +22,7 @@ tags:
 
 Our story began in 2010, at that time some IT engineers started a company "dotCloud". The company mainly provides cloud computing service based on PaaS. More specifically, a containerization technology related to LXC, which is Linux container.
 
-Then dotCloud company simplified and standardized their containerization technology and renamed it as "Docker"
+Then dotCloud company simplified and standardized their containerization technology and renamed it as "Docker".
 
 After they created Docker tech, it did not attract a lot of attention in the IT industry. So dotCloud, as a small start up company, is struggling under fierce competitions.
 
@@ -35,7 +36,7 @@ and that leads to a question, why people like Docker?
 
 In the past, the most popular virtualisation technology is virtual machine (Hypervisors) - It is a software that allow you to emulate hardware, and you can install another operating system on top of it.
 
-(hypervisor graph)
+![hypervisor graph](/img/in-post/hypervisor.png)
 
 For example, you can use VMware or OpenStack to start one or more virtual machine on your physical host computer. These virtual machines are separated and does not affect each other.
 
@@ -50,7 +51,7 @@ Docker Benefits:
 - Boots within seconds (Hypervisor - up to 1 min to boot up)
 - Much less resource consumption (Hypervisor - consumes gigabytes of space)
 
-(graph docker)
+![containers graph](/img/in-post/containers.png)
 
 ### 3. Docker basic concepts
 
@@ -61,6 +62,8 @@ In order to fully understand docker, we can have a look at their slogan on their
 1."Build safer, share wider, run faster"
 
 2."Accelerate how you build, share, and run modern applications."
+
+![docker slogan](/img/in-post/docker-slogan.png)
 
 Key words: Build, Share and Run;
 
@@ -80,7 +83,8 @@ Key words: Build, Share and Run;
 For Docker technology, there are 3 core concepts: Image, Container and Repository.
 
 The docker ecosystem, it has three primary parts to it - the client, the host and the registry:
-(graph registry strucutre)
+
+![graph registry strucutre](/img/in-post/4-docker.png)
 
 - We already covered Registry.
 - The Client is the primary way of interacting with the Docker host. In very much the same way that client applications talk to an API, the Docker command line interacts with the Docker server.
@@ -106,10 +110,12 @@ The reason why Docker is so powerful, so popular is that multiple isolated docke
 - Host
     - Host would remove the network boundary between container and Docker host machine. Containers would directly use host network configurations.
 - None:
-    - This mode will not configure any IP for the container and doesn't have any access to the external network as well as for other containers. It can be used for running batch jobs.（批处理任务）
+    - This mode will not configure any IP for the container and doesn't have any access to the external network as well as for other containers. It can be used for running batch jobs.
 - Overlay:
     - The overlay network driver creates a distributed network among multiple Docker daemon hosts. This network sits on top of (overlays) the host-specific networks, allowing containers connected to it (including swarm service containers) to communicate securely when encryption is enabled.
 - Macvlan:
     - container pretend to be an physical computer with real MAC address
 
 Useful Resources:
+
+- [DevOps-Girls/docker-101](https://github.com/DevOps-Girls/docker-101)
