@@ -124,7 +124,7 @@ Docker automatically generates images by reading the instructions in the Dockerf
 
 Dockerfile can be used to invoke any command on the command line.
 
-When creating Docker containers, we should try our best to create "smaller" images, because it would be faster to transfer and deploy relatively small images. According to docker docs, the image defined by Dockerfile should generate containers that are "as ephemeral as possible". That means the contaienr can be stopped and destroyed, then rebuilt and replaced with minimum set up and configuration. 
+When creating Docker containers, we should try our best to create "smaller" images, because it would be faster to transfer and deploy relatively small images. According to docker docs, the image defined by Dockerfile should generate containers that are "as ephemeral as possible". That means the contaienr can be stopped and destroyed, then rebuilt and replaced with minimum set up and configuration.
 
 Some useful Dockerfile skills:
 - First step: Choose the right base (smaller)

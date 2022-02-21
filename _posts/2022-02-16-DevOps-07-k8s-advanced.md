@@ -11,7 +11,17 @@ tags:
 - wiki
 - devops
 ---
-**Research summary:**
+
+- [Research summary](#research-summary)
+- [Volume](#volume)
+  - [1. Basic storage](#1-basic-storage)
+  - [2. Advanced storage](#2-advanced-storage)
+  - [3. Configuration storage](#3-configuration-storage)
+  - [Templating](#templating)
+- [Useful Resources:](#useful-resources)
+
+
+## Research summary
 
 - Advanced concepts
   - secrets
@@ -23,25 +33,25 @@ tags:
 
 What is volume:
 
-- Kubernetes supports many types of volumes. A [Pod](https://kubernetes.io/docs/concepts/workloads/pods/) can use any number of volume types simultaneously. Ephemeral volume types have a lifetime of a pod, but persistent volumes exist beyond the lifetime of a pod.
+- Kubernetes supports many types of volumes. A [Pod](https://kubernetes.io/docs/concepts/workloads/pods/) can use any number of volume types simultaneously. Ephemeral volume types have a lifetime of a pod, but persistent volumes exist beyond the lifetime of a pod.
 - At its core, a volume is a directory, possibly with some data in it, which is accessible to the containers in a pod. How that directory comes to be, the medium that backs it, and the contents of it are determined by the particular volume type used.
 
 ### 1. Basic storage
 
 - **EmptyDir**
     - An `emptyDir` volume is first created when a Pod is assigned to a node, and exists as long as that Pod is running on that node. As the name says, the `emptyDir` volume is initially empty. All containers in the Pod can read and write the same files in the `emptyDir` volume, though that volume can be mounted at the same or different paths in each container. When a Pod is removed from a node for any reason, the data in the `emptyDir` is deleted permanently.
-    
+
     ```yaml
     volumes:
       - name: cache-volume
         emptyDir: {}
     ```
-    
+
 - **HostPath**
     - A `hostPath` volume mounts a file or directory from the host node's filesystem into your Pod. This is not something that most Pods will need, but it offers a powerful escape hatch for some applications.
-        
+
     - HostPath volumes present many security risks, and it is a best practice to avoid the use of HostPaths when possible. When a HostPath volume must be used, it should be scoped to only the required file or directory, and mounted as ReadOnly.
-    
+
     ```yaml
     volumes:
       - name: test-volume
@@ -51,7 +61,7 @@ What is volume:
           # this field is optional
           type: Directory
     ```
-    
+
 - **NFS**
     - An `nfs` volume allows an existing NFS (Network File System) share to be mounted into a Pod. Unlike `emptyDir`, which is erased when a Pod is removed, the contents of an `nfs` volume are preserved and the volume is merely unmounted. This means that an NFS volume can be pre-populated with data, and that data can be shared between pods. NFS can be mounted by multiple writers simultaneously.
     - **Note: You must have your own NFS server running with the share exported before you can use it.**
@@ -59,14 +69,14 @@ What is volume:
 ### 2. Advanced storage
 
 - **PV & PVC**
-    
+
     - PV(Persisted volume) → abstraction, cross namespace
     - PVC(Persisted volume Claim) → apply for resource
     - PV + PVC → responsibility separation
         - storage: managed by storage engineer
         - PV: managed by Kubernetes managers
         - PVC: manged by kubernetes users
-    
+
 - **Life Cycle**
     - resource provisionning
     - resource binding
@@ -82,7 +92,7 @@ What is volume:
         - ConfigMap provides a way to inject configuration data into pods. The data stored in a ConfigMap can be referenced in a volume of type configMap and then consumed by containerized apps running in your pod.
         - Mounted ConfigMaps are updated automatically.
         - **A container using a ConfigMap as a [subPath](https://kubernetes.io/docs/concepts/storage/volumes/#using-subpath) volume mount will not receive ConfigMap updates.?**
-    
+
 - **Secret**
     - Secrets are a first-class citizen in Kubernetes. They are mounted as data volumes or environment variables and are specific to a particular namespace, ensuring that the scope isn’t across all applications.
     - kubelet process is responsible for mounting volumes and secrets in the worker node.
@@ -115,4 +125,4 @@ Templating engine:
 - Helm: templated yaml
 
 ---
-#### Useful Resources:
+## Useful Resources:

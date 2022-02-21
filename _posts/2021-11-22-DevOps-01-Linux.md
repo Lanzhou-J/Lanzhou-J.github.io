@@ -11,7 +11,33 @@ tags:
 - wiki
 - devops
 ---
-**Research summary:**
+
+- [1 Linux introduction](#1-linux-introduction)
+  - [1.1 History of Unix & Linux](#11-history-of-unix--linux)
+    - [1.1.1 UNIX development history](#111-unix-development-history)
+    - [1.1.2 Linux history and different versions](#112-linux-history-and-different-versions)
+  - [1.2 Open source software](#12-open-source-software)
+  - [1.3 Linux application](#13-linux-application)
+- [2 Linux installation](#2-linux-installation)
+- [3 Linux dir structure](#3-linux-dir-structure)
+- [4 Linux Commands](#4-linux-commands)
+  - [4.1 File management commands](#41-file-management-commands)
+    - [4.1.1 ls command](#411-ls-command)
+    - [4.1.2 directory management command](#412-directory-management-command)
+    - [4.1.3 File processing commands](#413-file-processing-commands)
+    - [4.1.4 link commands](#414-link-commands)
+  - [4.2 Permission commands](#42-permission-commands)
+    - [4.2.1 Permission command chmod](#421-permission-command-chmod)
+  - [4.3 File search command](#43-file-search-command)
+    - [4.3.1 File search command find](#431-file-search-command-find)
+    - [4.3.2 Other search command](#432-other-search-command)
+  - [4.4 Help command](#44-help-command)
+  - [4.5 User management command](#45-user-management-command)
+  - [4.6 Zip/Unzip command](#46-zipunzip-command)
+  - [4.7 Network command](#47-network-command)
+
+
+## Research summary
 
 - Linux introduction
 - Dir structure
