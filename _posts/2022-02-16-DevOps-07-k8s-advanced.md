@@ -126,3 +126,6 @@ Templating engine:
 
 ---
 ## Useful Resources:
+- [Kubernetes docs - Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)
+- [Kubernetes docs - Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
+- [Kubernetes docs - ConfigMaps](https://kubernetes.io/docs/concepts/configuration/configmap/)
