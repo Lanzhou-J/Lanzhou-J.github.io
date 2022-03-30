@@ -104,11 +104,11 @@ What is volume:
 
 It is generally good practice to template your infrastructure code - this way, you can make sure that your different environments are using the same setup.
 
-For this, you can use [ktmpl](https://github.com/jimmycuadra/ktmpl) - a templating engine that allows you to set parameters as you need.
+For this, you can use [ktmpl](https://github.com/jimmycuadra/ktmpl) - a templating engine that allows you to set parameters as you need.
 
 `ktmpl $(file) -f params/defaults.yaml | kubectl apply -f -`
 
-- If your [workflow template](https://cloud.google.com/dataproc/docs/concepts/workflows/overview) will be run multiple times with different values, you can avoid having to edit the workflow each time by defining parameters in the template (parameterizing the template). Then, you can pass different values for the parameters each time you run the template. (from Google Dataproc)
+- If your workflow template will be run multiple times with different values, you can avoid having to edit the workflow each time by defining parameters in the template (parameterizing the template). Then, you can pass different values for the parameters each time you run the template. (from Google Dataproc)
 - A template is a pattern used for making accurate copies of something. A template engine is software designed to combine templates with a data model. → to produce multiple pages that share the same look throughout the site.(website development, twig for PHP)
 
 Other use cases:
