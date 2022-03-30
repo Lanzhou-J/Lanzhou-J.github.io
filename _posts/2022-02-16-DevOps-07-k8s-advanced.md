@@ -77,12 +77,12 @@ What is volume:
         - PV: managed by Kubernetes managers
         - PVC: manged by kubernetes users
 
-- **Life Cycle**
-    - resource provisionning
-    - resource binding
-    - resource using
-    - resource release
-    - resource reclaim
+  - *Life Cycle*
+      - resource provisionning
+      - resource binding
+      - resource using
+      - resource release
+      - resource reclaim
 
 ### 3. Configuration storage
 
