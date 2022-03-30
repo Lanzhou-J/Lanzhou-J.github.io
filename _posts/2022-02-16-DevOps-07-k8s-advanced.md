@@ -98,7 +98,7 @@ What is volume:
     - kubelet process is responsible for mounting volumes and secrets in the worker node.
     - **kubelet**: The `kubelet` is an agent running on each node in the cluster. It watches for pod assignments to the node, executes pod containers using the container engine, manages pod volumes and secrets, and runs status health checks against pods and the node.
     - **Secrets**: Applications may require data that is more sensitive in nature, database passwords or API tokens. These should not be exposed to everyone, as would be the case if kept in the yaml. When we create a `Secret`, the values are encoded and are no longer visible in plaintext. We can use the `Secret` value in a similar way to that of values in a `ConfigMap`, but the value is only exposed to the consuming pod.
-    - Kubernetes Secrets are, by default, stored unencrypted in the API server's underlying data store (etcd). (Encrypted now according to Phil)Anyone with API access can retrieve or modify a Secret, and so can anyone with access to etcd. Additionally, anyone who is authorized to create a Pod in a namespace can use that access to read any Secret in that namespace; this includes indirect access such as the ability to create a Deployment.
+    - Kubernetes Secrets are, by default, stored unencrypted in the API server's underlying data store (etcd). (Encrypted now) Anyone with API access can retrieve or modify a Secret, and so can anyone with access to etcd. Additionally, anyone who is authorized to create a Pod in a namespace can use that access to read any Secret in that namespace; this includes indirect access such as the ability to create a Deployment.
 
 ### Templating
 
