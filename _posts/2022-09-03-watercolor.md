@@ -32,3 +32,5 @@ tags:
 ---
 ## 水彩学习资料:
 - [Watercolor by Shibasaki](https://www.youtube.com/c/WatercolorbyShibasaki) 日本老爷爷教水彩
+- [水彩咖啡厅 - Eric](https://www.youtube.com/c/%E6%B0%B4%E5%BD%A9%E5%92%96%E5%95%A1%E5%BB%B3Eric/videos?view=0&sort=p&flow=grid)
+- [Makoccino](https://www.youtube.com/c/Makoccino/videos) 很适合水彩新手入门的小教程
