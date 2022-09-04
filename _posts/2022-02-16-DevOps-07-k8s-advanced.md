@@ -124,8 +124,6 @@ Templating engine:
 - ktmpl - simple templating tool
 - Helm: templated yaml
 
-<测试内容>
-
 ---
 ## Useful Resources:
 - [Kubernetes docs - Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)
