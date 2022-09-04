@@ -16,11 +16,15 @@ tags:
 - Buildkite
 - Create a pipeline
 
+### 1. What is CI/CD?
+
+### 1. Why use CI/CD?
+
 ### 1. What is Buildkite?
 
 Buildkite is a tool for running CI(continuous integration) pipelines on your own infrastructure.
 
 
-
 ---
 #### Useful Resources:
+- [Buildkite docs - Defining Your Pipeline Steps](https://buildkite.com/docs/pipelines/defining-steps)
