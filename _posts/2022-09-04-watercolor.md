@@ -2,7 +2,7 @@
 title: 学习水彩画一年的诚实记录
 layout: post
 subtitle: null
-date: '2022-09-04 23:30:00'
+date: '2022-09-04 20:30:00'
 author: Lanzhou
 header-img: img/post-bg-unix-linux.jpg
 tags:
