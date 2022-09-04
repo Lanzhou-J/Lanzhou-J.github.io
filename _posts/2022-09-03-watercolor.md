@@ -24,5 +24,11 @@ tags:
 - 素描：不学是不行的。黑白灰阴影关系还是很重要，老师会用纯色黑白灰或者棕色深棕色来打小色稿。
 - 透视：不学是不行的。风景画，尤其是城市建筑街景都会用到。
 
-<水彩画图片>
-<水彩学习资料推荐>
+今年的水彩作业：
+
+![watercolor-1](/img/in-post/watercolor-1.JPG)
+![watercolor-2](/img/in-post/watercolor-2.JPG)
+
+---
+## 水彩学习资料:
+- [Watercolor by Shibasaki](https://www.youtube.com/c/WatercolorbyShibasaki) 日本老爷爷教水彩
