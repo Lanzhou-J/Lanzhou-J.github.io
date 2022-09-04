@@ -34,3 +34,17 @@ tags:
 - [Watercolor by Shibasaki](https://www.youtube.com/c/WatercolorbyShibasaki) 日本老爷爷教水彩
 - [水彩咖啡厅 - Eric](https://www.youtube.com/c/%E6%B0%B4%E5%BD%A9%E5%92%96%E5%95%A1%E5%BB%B3Eric/videos?view=0&sort=p&flow=grid)
 - [Makoccino](https://www.youtube.com/c/Makoccino/videos) 很适合水彩新手入门的小教程
+
+---
+
+### Troubleshooting:
+
+很长时间没有更新blog的结果是 -- 这篇博文花了很久才成功发布。主要原因如下：
+1. 发现新的commit没法开始一个新的Github Actions workflow，最后发现是因为几个月前我把自己的Github.io github repo设置为private了……（可以在Settings > Code and automation > Pages看到提醒）
+2. 其他文章都可以正常更新，但这篇发布后在网站上根本看不见……检查了Github Actions的 “pages build and deployment > build > Build with Jekyll” 发现这行信息:
+    ```
+    Skipping: _posts/2022-06-02-watercolor.md has a future date
+    ```
+    原因是文章date值默认是按照UTC时间来设置（https://stackoverflow.com/questions/30625044/jekyll-post-not-generated）
+
+人生跨入新的阶段，之后争取多多更新blogs！
