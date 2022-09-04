@@ -18,7 +18,6 @@ tags:
   - [2. Advanced storage](#2-advanced-storage)
   - [3. Configuration storage](#3-configuration-storage)
   - [Templating](#templating)
-- [<测试内容>](#测试内容)
 - [Useful Resources:](#useful-resources)
 
 
@@ -126,6 +125,7 @@ Templating engine:
 - Helm: templated yaml
 
 <测试内容>
+
 ---
 ## Useful Resources:
 - [Kubernetes docs - Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)
