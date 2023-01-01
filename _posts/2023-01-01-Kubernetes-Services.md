@@ -18,19 +18,26 @@ tags:
         - 实现loadbalancing
         - 还可以帮助实现应用程序中微服务之间的松散耦合（loose coupling）。
 
-- NodePort, ClusterIP等几种services type有什么区别？
-    - [https://stackoverflow.com/questions/41509439/whats-the-difference-between-clusterip-nodeport-and-loadbalancer-service-types](https://stackoverflow.com/questions/41509439/whats-the-difference-between-clusterip-nodeport-and-loadbalancer-service-types)
+- NodePort, ClusterIP等几种Service types有什么区别？
     - ClusterIP Services
+      - 通过集群的内部IP暴露服务
+      - 通常无法从外部访问
+      - 是默认的Service类型
     - NodePort Services
-    - Headless Services
+      - 通过Node（节点）上的IP和静态端口暴露服务
+      - 用户可以从集群外部访问NodePort service，访问`<NodeIP>:<NodePort>`
     - LoadBalancer Services
-- Port TargetPort NodePort等有什么区别？
-        - Port: Service的Port，可以随意自定义
-        - TargetPort： Pod上的目标Port，不可随意自定义，必须符合container监听的Port
+      - 使用云提供商(e.g. AWS)的负载均衡器向外部暴露服务。
+- Port， TargetPort， NodePort等有什么区别？
+    - Port: Service的Port，可以随意自定义
+    - TargetPort： Pod上的目标Port，不可随意自定义，必须符合container监听的Port
 - Service selector怎么用？多个selector有什么作用？
     - Pods’ labels  - Must match ALL the selectors，这样pod才可以成为Service的一个endpoint
 
-[https://www.youtube.com/watch?v=T4Z7visMM4E](https://www.youtube.com/watch?v=T4Z7visMM4E)
+### Reference
+- [https://www.youtube.com/watch?v=T4Z7visMM4E](https://www.youtube.com/watch?v=T4Z7visMM4E)
+
+- [https://stackoverflow.com/questions/41509439/whats-the-difference-between-clusterip-nodeport-and-loadbalancer-service-types](https://stackoverflow.com/questions/41509439/whats-the-difference-between-clusterip-nodeport-and-loadbalancer-service-types)
 
 ---
 
