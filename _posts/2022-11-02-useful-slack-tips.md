@@ -1,3 +1,15 @@
+---
+title: Useful slack tips
+layout: post
+subtitle: null
+date: '2022-11-02 20:30:00'
+author: Lanzhou
+header-img: img/post-bg-unix-linux.jpg
+tags:
+- study
+- English
+---
+
 # Useful slack tips
 
 1. Shortcuts
