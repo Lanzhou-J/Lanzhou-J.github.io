@@ -24,7 +24,7 @@ tags:
       - 通常无法从外部访问
       - 是默认的Service类型
     - NodePort Services
-      - 通过Node（节点）上的IP和静态端口暴露服务
+      - 通过节点(Node)上的IP和静态端口暴露服务
       - 用户可以从集群外部访问NodePort service，访问`<NodeIP>:<NodePort>`
     - LoadBalancer Services
       - 使用云提供商(e.g. AWS)的负载均衡器向外部暴露服务。
@@ -32,7 +32,7 @@ tags:
     - Port: Service的Port，可以随意自定义
     - TargetPort： Pod上的目标Port，不可随意自定义，必须符合container监听的Port
 - Service selector怎么用？多个selector有什么作用？
-    - Pods’ labels  - Must match ALL the selectors，这样pod才可以成为Service的一个endpoint
+    - Pod的标签必须匹配Service所有的selectors，这样pod才可以成为Service的一个endpoint。
 
 ### Reference
 - [https://www.youtube.com/watch?v=T4Z7visMM4E](https://www.youtube.com/watch?v=T4Z7visMM4E)
