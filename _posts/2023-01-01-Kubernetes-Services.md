@@ -1,5 +1,5 @@
 ---
-title: Kubernetes Service Q & A
+title: Kubernetes Service 相关问题笔记
 layout: post
 subtitle: null
 date: '2023-01-01 00:30:00'
@@ -8,7 +8,7 @@ tags:
 - study
 - 中文
 ---
-# Kubernetes Service Q & A
+# Kubernetes Service 相关问题笔记
 
 - ReplicaSet, Deployment和service有什么区别？
     - ReplicaSet: 确保任何时间都有指定数量的Pod副本在运行。
