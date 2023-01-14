@@ -33,8 +33,9 @@ tags:
     - `has:link`
     - `has: :emojiname:`
 
-4. Custom Emoji
-    - Customize … → emoji → custom emoji
+4. Emoji
+    - Custom emojis: Customize … → emoji → custom emoji
+    - You can hover over or tap and hold reactions(on your phone) in a conversation to see who added them.
 
 5. Slash pro
     - `/dnd 1 hour` → do not disturb
@@ -52,4 +53,9 @@ tags:
 7.  Format message
     - Copy link → select text → paste link (avoid long url)
     - Use dot points can make message clearer to read.
-    - If asking for help, follow this template …
+    - If asking for help, follow this template:
+      - "I'm trying to do..."
+      - "I did A and I expected B to happen, but instead ..."
+      - "I've tried X, Y and Z to fix it, but ..."
+      - "Could this be because of ...?"
+      - (These are also good questions to ask yourself to organize your thoughts when debugging!)
